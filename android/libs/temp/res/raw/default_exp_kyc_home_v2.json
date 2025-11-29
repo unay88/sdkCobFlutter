@@ -1,0 +1,31 @@
+{
+  "variant": "variant_a",
+  "is_enabled": true,
+  "widget": {
+    "titles": {
+      "en": {
+        "passport": "You're 3 mins away from getting all the benefits",
+        "gopayplus": "Take your e-KTP & selfie",
+        "p2p": "You're 1 mins away from unlocking p2p",
+        "transfer": "You’re 1 minute away from transferring money",
+        "gps": "You’re 1 minute away from activating Tabungan",
+        "cashloan": "You're 3 mins away from activating GoPay Pinjam",
+        "vehicleFinancing": "3 steps to activate your GoPay Pinjam BPKB:",
+        "cicil": "You're 3 mins away from activating GoPay Later",
+        "jago": "You’re 1 minute away from activating Jago"
+      },
+      "id": {
+        "passport": "Cukup 3 menit buat nikmatin semua keuntungan",
+        "gopayplus": "Foto e-KTP & selfie",
+        "p2p": "Cukup 1 menit buat nikmatin transfer ke mana aja",
+        "transfer": "Cukup 1 menit buat lanjut transfer",
+        "gps": "Cukup 1 menit buat lanjut aktifin Tabungan",
+        "cashloan": "Cukup 3 menit buat aktivasi GoPay Pinjam",
+        "vehicleFinancing": "3 langkah aktifin GoPay Pinjam BPKB:",
+        "cicil": "Cukup 3 menit buat aktivasi GoPay Later",
+        "jago": "Cukup 1 menit buat lanjut aktifin Jago"
+      }
+    },
+    "widget_variant": "a"
+  }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/kyc_sdk_16dp"
+    android:background="@drawable/rounded_grey_border_2"
+    android:padding="@dimen/kyc_sdk_16dp"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="@dimen/kyc_sdk_10dp"
+        app:cardElevation="@dimen/kyc_sdk_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/kyc_plus_black_10"
+                android:scaleType="centerCrop" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImagePlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:tint="@color/kyc_plus_black"
+                app:srcCompat="@drawable/kyc_plus_ic_multimedia_24_image" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tvImage"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        app:kycPlusTypographyStyle="kyc_plus_title_small_demi_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cvImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/onekyc_review_document_selfie" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tvGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        app:kycPlusTypographyStyle="kyc_plus_caption_small_book_active"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/cvImage"
+        app:layout_constraintTop_toBottomOf="@id/tvImage"
+        tools:text="@string/onekyc_zero_clicks_view_guideline" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivRetake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/kyc_sdk_6dp"
+        app:layout_constraintBottom_toBottomOf="@id/cvImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivDelete"
+        tools:srcCompat="@drawable/kyc_plus_ic_edit_photo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/cvImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:srcCompat="@drawable/kyc_plus_ic_delete_photo" />
+
+    <com.iab.digitalidentity.ui.button.KycPlusButton
+        android:id="@+id/btnPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:kyc_plus_btn_type="kyc_plus_secondary_positive_tiny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvImage"
+        tools:kyc_plus_text="@string/onekyc_review_document_take_photo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/digital_identity_fill_background_primary"
+    app:layoutDescription="@xml/activity_kyc_plus_detailed_preview_scene"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <View
+        android:id="@+id/viewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="?attr/digital_identity_fill_static_black" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/kyc_sdk_16dp"
+        android:tint="@color/kyc_plus_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kyc_plus_ic_navigation_24_cancel" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kyc_plus_typography_default_title"
+            app:kycPlusTypographyStyle="kyc_plus_title_moderate_bold_default"
+            tools:text="KTP Photo" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:layout_margin="@dimen/kyc_sdk_16dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintDimensionRatio="8:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:layout_margin="@dimen/kyc_sdk_16dp"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/kyc_sdk_20dp"
+        app:cardElevation="@dimen/kyc_sdk_0dp"
+        app:layout_constraintDimensionRatio="8:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/kyc_plus_black_10"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <com.iab.digitalidentity.ui.button.KycPlusCircularButton
+        android:id="@+id/btnExpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/kyc_sdk_16dp"
+        app:kyc_plus_cb_enabled="true"
+        app:kyc_plus_circular_btn_type="kyc_plus_circular_secondary_regular"
+        app:kyc_plus_icon_color_tint="?attr/digital_identity_fill_background_tertiary"
+        app:kyc_plus_icon_name="@drawable/kyc_plus_ic_payments_24_expand"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="@id/view" />
+
+    <LinearLayout
+        android:id="@+id/llGuideline"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/kyc_sdk_16dp"
+        android:background="@drawable/rounded_grey_border_2"
+        android:orientation="vertical"
+        android:padding="@dimen/kyc_sdk_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/tv_guideline_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/kyc_sdk_6dp"
+            android:text="@string/onekyc_review_document_guideline_info_title"
+            app:kycPlusTypographyStyle="kyc_plus_title_moderate_demi_default" />
+
+        <LinearLayout
+            android:id="@+id/llGuidelineSteps"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tvGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kyc_sdk_32dp"
+        android:paddingVertical="@dimen/kyc_sdk_6dp"
+        android:paddingStart="@dimen/kyc_sdk_6dp"
+        android:text="@string/onekyc_review_document_full_instruction"
+        app:kycPlusTypographyStyle="kyc_plus_caption_moderate_book_default"
+        app:layout_constraintEnd_toStartOf="@id/tvViewGuideline"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llGuideline" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tvViewGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/kyc_sdk_6dp"
+        android:paddingStart="@dimen/kyc_sdk_4dp"
+        android:paddingEnd="@dimen/kyc_sdk_6dp"
+        android:text="@string/onekyc_zero_clicks_view_guideline"
+        app:kycPlusTypographyStyle="kyc_plus_caption_moderate_demi_active"
+        app:layout_constraintBottom_toBottomOf="@id/tvGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvGuideline"
+        app:layout_constraintTop_toTopOf="@id/tvGuideline" />
+
+    <com.iab.digitalidentity.ui.button.KycPlusButton
+        android:id="@+id/btnRetake"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_8dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+        android:elevation="2dp"
+        app:kyc_plus_btn_type="kyc_plus_secondary_positive_regular"
+        app:kyc_plus_text="@string/onekyc_review_document_retake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnOk"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.iab.digitalidentity.ui.button.KycPlusButton
+        android:id="@+id/btnOk"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_8dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+        android:elevation="2dp"
+        app:kyc_plus_btn_type="kyc_plus_primary_positive_regular"
+        app:kyc_plus_text="@string/onekyc_review_document_looksgood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnRetake" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

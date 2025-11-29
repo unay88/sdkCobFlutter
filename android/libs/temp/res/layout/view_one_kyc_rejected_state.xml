@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="?attr/digital_identity_fill_active_secondary"
+    app:cardCornerRadius="?attr/digital_identity_spacing_5x"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/card_rejection_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/kyc_plus_white"
+            app:cardCornerRadius="?attr/digital_identity_spacing_5x">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="?attr/digital_identity_spacing_5x">
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:id="@+id/text_jago_rejection_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jago_one_kyc_widget_rejected_title"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:kycPlusTypographyStyle="kyc_plus_title_large_default" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/step_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kyc_plus_default_send_mini_spot_package_on_hold"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_rejection_reason_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/text_rejection_reason_title" />
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:id="@+id/text_rejection_reason_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="?attr/digital_identity_spacing_4x"
+                    android:layout_marginTop="?attr/digital_identity_spacing_4x"
+                    android:gravity="start"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/step_icon"
+                    app:layout_constraintTop_toBottomOf="@+id/text_jago_rejection_title"
+                    app:kycPlusTypographyStyle="kyc_plus_caption_small_book_default"
+                    tools:text="@string/jago_one_kyc_widget_jago_rejected_reason" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.iab.digitalidentity.ui.button.KycPlusCircularButton
+            android:id="@+id/icon_how_to_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="?attr/digital_identity_spacing_2x"
+            app:kyc_plus_circular_btn_type="kyc_plus_circular_primary_regular"
+            app:kyc_plus_cb_enabled="true"
+            app:kyc_plus_icon_color_tint="?attr/digital_identity_icon_static_white"
+            app:kyc_plus_icon_name="@drawable/kyc_plus_ic_navigation_16_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_rejection_details" />
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/text_guidelines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="?attr/digital_identity_spacing_4x"
+            android:text="@string/jago_one_kyc_help_cta"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@+id/icon_how_to_fix"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_rejection_details"
+            app:kycPlusTypographyStyle="kyc_plus_title_tiny_demi_active" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <com.iab.digitalidentity.ui.shadow.KycPlusShadowLayout
+        android:id="@+id/shadow_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:kyc_plus_corner_radius="56dp">
+
+        <!--
+        Depending upon the theme with which the layout is inflated, standard android components might be replaced with AppCompat counterparts
+        Since KycPlusTheme is based on AppCompat themes, the following button was converted to AppCompatButton and theming(changing background) was working fine on this.
+        But when the activity is using Material theme, this button was converted to MaterialButton. The background logic was not working with material button which caused the issue
+        (#1199659176258765)[https://app.asana.com/0/1166831033878022/1199659176258765]-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/circular_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kyc_plus_circular_button_background"
+            android:textAlignment="center" />
+
+    </com.iab.digitalidentity.ui.shadow.KycPlusShadowLayout>
+
+</merge>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/kyc_plus_white"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="?attr/digital_identity_spacing_5x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="?attr/digital_identity_spacing_5x">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/jago_one_kyc_widget_verification_title"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:kycPlusTypographyStyle="kyc_plus_title_large_default" />
+
+        <View
+            android:id="@+id/icon_step_document_status_bg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/drawable_kyc_green_circle"
+            app:layout_constraintBottom_toBottomOf="@+id/kyc_document_status_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/kyc_document_status_view" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_step_document_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="2dp"
+            android:tint="?attr/digital_identity_border_active"
+            app:srcCompat="@drawable/kyc_plus_ic_label_16_loading"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_step_document_status_bg"
+            app:layout_constraintStart_toStartOf="@+id/icon_step_document_status_bg"
+            app:layout_constraintTop_toTopOf="@+id/icon_step_document_status_bg" />
+
+        <com.iab.digitalidentity.sdk.widget.views.OneKycWidgetInProcessStepView
+            android:id="@+id/kyc_document_status_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?attr/digital_identity_spacing_5x"
+            android:layout_marginTop="?attr/digital_identity_spacing_6x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_step_document_status_bg"
+            app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+        <com.iab.digitalidentity.sdk.widget.views.OneKycWidgetInProcessStepView
+            android:id="@+id/kyc_personal_details_status_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/digital_identity_spacing_6x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/kyc_document_status_view"
+            app:layout_constraintTop_toBottomOf="@+id/kyc_document_status_view" />
+
+
+        <View
+            android:id="@+id/icon_step_personal_details_status_bg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="?attr/digital_identity_spacing_2x"
+            android:background="@drawable/drawable_kyc_gray_circle"
+            app:layout_constraintBottom_toBottomOf="@+id/kyc_personal_details_status_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/kyc_personal_details_status_view" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_step_personal_details_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="2dp"
+            android:tint="?attr/digital_identity_border_static_white"
+            app:srcCompat="@drawable/kyc_plus_ic_communication_16_chat_sent"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_step_personal_details_status_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/icon_step_personal_details_status_bg" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/one_kyc_status_step_separator"
+            app:layout_constraintBottom_toTopOf="@+id/icon_step_personal_details_status_bg"
+            app:layout_constraintEnd_toEndOf="@+id/icon_step_document_status_bg"
+            app:layout_constraintStart_toStartOf="@+id/icon_step_document_status_bg"
+            app:layout_constraintTop_toBottomOf="@+id/icon_step_document_status_bg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kyc_plus_white"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <!-- Navigation Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:animateLayoutChanges="true"
+        android:animationCache="false"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/kyc_sdk_1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.button.KycPlusButton
+            android:id="@+id/btnDebug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+            android:visibility="gone"
+            app:kyc_plus_btn_type="kyc_plus_primary_static_white_tiny"
+            app:kyc_plus_text="Debug"/>
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/btnGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+            android:drawablePadding="@dimen/kyc_sdk_4dp"
+            android:padding="@dimen/kyc_sdk_6dp"
+            app:kycPlusTypographyStyle="kyc_plus_title_tiny_demi_static_black"
+            tools:text="@string/onekyc_zero_clicks_view_guideline" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Camera -->
+    <RelativeLayout
+        android:id="@+id/selfieCameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selfieCameraLoc"
+                android:layout_width="match_parent"
+                android:layout_height="547dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/selfieCameraSize"
+                    android:layout_width="240dp"
+                    android:layout_height="320dp"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/selfieCameraPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selfieMaskLayout"
+                android:layout_width="375dp"
+                android:layout_height="667dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_background" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraContour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_contour" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraDottedContour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_dotted_contour" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/kyc_plus_aurora_overlay" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- Title & Feedback -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tvTitleLocationBottom"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/tvTitleLocationTop"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/tvTitle"
+                    layout="@layout/layout_fr_camera_feedback" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- Full Screen White Loader -->
+    <FrameLayout
+        android:id="@+id/fullScreenLoaderWhite"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:alpha="0.0"
+        android:background="#CCFFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <!-- Debug View -->
+    <FrameLayout
+        android:id="@+id/debugView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/kyc_plus_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+style DigitalIdentity_BaseTheme_Dark
+style DigitalIdentity_BaseTheme_Light
+style DigitalIdentity_BaseTheme_Light_HighContrast
+style DigitalIdentity_Dark_Green
+style DigitalIdentity_Light_Green
+style DigitalIdentity_Light_Green_HighContrast
+style DigitalIdentity_Light_Purple
+font digital_identity_font_bold
+font digital_identity_font_regular
+font digital_identity_font_thin

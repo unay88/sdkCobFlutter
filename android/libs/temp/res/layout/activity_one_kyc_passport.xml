@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/previewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kyc_plus_black"
+    android:visibility="gone"
+    tools:theme="@style/DigitalIdentity.Light.Green"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:kycPlusTypographyStyle="kyc_plus_title_moderate_bold_static_white"
+            tools:text="KTP Photo" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="?attr/digital_identity_spacing_4x"
+        app:kycPlusTypographyStyle="kyc_plus_body_small_static_white"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        tools:text="You must face straight towards the camera without glasses and hats, similar to your" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/previewImage"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:layout_marginTop="@dimen/kyc_sdk_4dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/retakeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription"
+        tools:visibility="visible" />
+
+    <com.iab.digitalidentity.ui.button.KycPlusButton
+        android:id="@+id/retakeButton"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_8dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+        app:kyc_plus_btn_type="kyc_plus_tertiary_positive_regular"
+        app:kyc_plus_enabled="true"
+        app:kyc_plus_text="@string/gofin_go_pay_kyc_confirmation_retake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/confirmButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.iab.digitalidentity.ui.button.KycPlusButton
+        android:id="@+id/confirmButton"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_8dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+        app:kyc_plus_btn_type="kyc_plus_primary_positive_regular"
+        app:kyc_plus_enabled="true"
+        app:kyc_plus_text="@string/gofin_go_pay_kyc_confirmation_use_this_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/retakeButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

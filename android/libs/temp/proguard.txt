@@ -1,0 +1,62 @@
+#-keepattributes RuntimeVisibleAnnotations, Signature, *Annotation*
+
+# Ojo SDK
+-keep class com.gojek.ojosdk.** {*;}
+-keepclassmembers class com.gojek.ojosdk.** {*;}
+
+-keep class com.iab.digitalidentity.sdk.core.extra.SInitializer {*;}
+
+-keep class com.iab.digitalidentity.** implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Keep Gson's reflection-based serialization intact
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.* { *; }
+-keepclassmembers class * {
+    @com.google.gson.annotations.SerializedName <fields>;
+}
+
+# Keep data classes
+-keep class com.iab.digitalidentity.sdk.model.* {*;}
+-keep class com.iab.digitalidentity.sdk.model.*$** {*;}
+-keep class com.iab.digitalidentity.sdk.core.model.** {*;}
+-keep class com.iab.digitalidentity.sdk.core.model.*$** {*;}
+-keep class com.iab.digitalidentity.sdk.widget.models.** {*;}
+-keep class com.iab.digitalidentity.sdk.widget.models.*$** {*;}
+
+## Keep Enums
+-keepclassmembers enum com.iab.digitalidentity.** {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+# Prevent proguard from stripping interface information from TypeAdapter, TypeAdapterFactory,
+# JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)
+-keep class com.iab.digitalidentity.* extends com.google.gson.TypeAdapter
+-keep class com.iab.digitalidentity.* implements com.google.gson.TypeAdapterFactory
+-keep class com.iab.digitalidentity.* implements com.google.gson.JsonSerializer
+-keep class com.iab.digitalidentity.* implements com.google.gson.JsonDeserializer
+
+# Prevent R8 from leaving Data object members always null
+-if class *
+-keepclasseswithmembers class <1> {
+    <init>(...);
+    @com.google.gson.annotations.SerializedName <fields>;
+}
+
+# Retain generic signatures of TypeToken and its subclasses with R8 version 3.0 and higher.
+-keep,allowobfuscation,allowshrinking class com.google.gson.reflect.TypeToken
+-keep,allowobfuscation,allowshrinking class com.iab.digitalidentity.* extends com.google.gson.reflect.TypeToken
+
+# Ignore warnings for missing classes related to clickstream
+-dontwarn clickstream.listener.**
+-dontwarn com.tinder.scarlet.**
+
+
+
+-keep class * extends com.google.protobuf.GeneratedMessageLite { *; }
+
+
+
+-keep class * extends com.google.protobuf.GeneratedMessageLite { *; }

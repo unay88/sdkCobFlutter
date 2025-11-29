@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?attr/digital_identity_fill_background_primary"
+    android:visibility="gone"
+    tools:theme="@style/DigitalIdentity.Light.Green"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kycPlusTypographyStyle="kyc_plus_title_moderate_bold_default"
+            tools:text="@string/onekyc_review_screen_title" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/privacy_and_tnc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/kyc_sdk_16dp">
+
+            <LinearLayout
+                android:id="@+id/llNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+                android:background="@drawable/rounded_blue_background"
+                android:orientation="horizontal"
+                android:padding="@dimen/kyc_sdk_16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_kyc_review" />
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/kyc_sdk_10dp"
+                    app:kycPlusTypographyStyle="kyc_plus_caption_small_book_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@drawable/kyc_plus_default_common_mini_spot_information" />
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/kyc_sdk_10dp"
+                    app:kycPlusTypographyStyle="kyc_plus_body_small_default"
+                    tools:text="@string/onekyc_review_document_info" />
+            </LinearLayout>
+
+            <ViewStub
+                android:id="@+id/viewStubKtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/kyc_sdk_16dp"
+                android:layout="@layout/layout_document_review_item_view" />
+
+            <ViewStub
+                android:id="@+id/viewStubSelfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/kyc_sdk_16dp"
+                android:layout="@layout/layout_document_review_item_view" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/kyc_sdk_24dp"
+                android:background="@drawable/rounded_grey_border_2"
+                android:padding="@dimen/kyc_sdk_16dp">
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:id="@+id/tvGuide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:kycPlusTypographyStyle="kyc_plus_caption_small_book_default"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/gofin_kyc_upload_bank_monitored_subtitle" />
+
+                <LinearLayout
+                    android:id="@+id/llBankSupervision"
+                    android:layout_width="@dimen/kyc_sdk_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/kyc_sdk_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvGuide">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSupervision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/kyc_plus_green"
+                        tools:srcCompat="@drawable/kyc_plus_ic_label_16_double_shield" />
+
+                    <com.iab.digitalidentity.ui.text.KycPlusTextView
+                        android:id="@+id/tvSupervision"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="?attr/digital_identity_spacing_2x"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        app:kycPlusTypographyStyle="kyc_plus_caption_small_demi_active"
+                        tools:text="@string/gofin_kyc_upload_bank_monitored_title" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.iab.digitalidentity.ui.commonviews.OneKycPrivacyAndTncView
+        android:id="@+id/privacy_and_tnc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnSubmit" />
+
+    <com.iab.digitalidentity.ui.button.KycPlusButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/kyc_sdk_16dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_8dp"
+        app:kyc_plus_btn_type="kyc_plus_primary_positive_regular"
+        tools:kyc_plus_text="@string/onekyc_review_document_submit"
+        app:layout_constraintBottom_toTopOf="@id/tvUsePassport" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tvPassport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onekyc_review_foreigner_info"
+        app:kycPlusTypographyStyle="kyc_plus_caption_small_demi_default"
+        app:layout_constraintBottom_toBottomOf="@id/tvUsePassport"
+        app:layout_constraintEnd_toStartOf="@id/tvUsePassport"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvUsePassport" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tvUsePassport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/kyc_sdk_8dp"
+        android:paddingHorizontal="@dimen/kyc_sdk_4dp"
+        android:paddingVertical="@dimen/kyc_sdk_6dp"
+        android:text="@string/onekyc_review_use_passport"
+        android:textAlignment="center"
+        app:kycPlusTypographyStyle="kyc_plus_caption_small_demi_active"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvPassport" />
+</androidx.constraintlayout.widget.ConstraintLayout>

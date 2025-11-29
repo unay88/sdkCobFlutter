@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/kyc_plus_shimmer_theme_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        android:layout_marginTop="@dimen/kyc_sdk_16dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+        android:background="@drawable/one_kyc_widget_shimmer_card" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kyc_sdk_90dp"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        android:layout_marginTop="@dimen/kyc_sdk_16dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+        android:background="@drawable/one_kyc_widget_shimmer_card" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,16 @@
+{
+  "variant": "treatment-4",
+  "fr_challenge": {
+    "verification_timer": 5000,
+    "polling_interval": 1000,
+    "polling_batch": 5,
+    "polling_ceiling": 5,
+    "aurora_configs": "treatment1"
+  },
+  "captureWindow": 3,
+  "selfieAutoCapTO": 50,
+  "selfieAuroraAutoCapTO": 30,
+  "ktpAutoCapTO": 30,
+  "uploadSelfieSecondImage": true,
+  "uploadSelfieSwitchImage": true
+}

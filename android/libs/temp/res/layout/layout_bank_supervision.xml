@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/explore_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/digital_identity_fill_background_secondary"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/kyc_sdk_16dp"
+    android:paddingBottom="@dimen/kyc_sdk_64dp">
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kyc_sdk_4dp"
+        android:text="@string/gofin_kyc_upload_bank_monitored_title"
+        app:kycPlusTypographyStyle="kyc_plus_title_large_default" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kyc_sdk_4dp"
+        android:text="@string/gofin_kyc_upload_bank_monitored_subtitle"
+        app:kycPlusTypographyStyle="kyc_plus_body_moderate_default" />
+</LinearLayout>

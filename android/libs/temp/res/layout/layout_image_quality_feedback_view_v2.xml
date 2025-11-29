@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dark_gray_pills"
+    android:padding="@dimen/kyc_sdk_16dp"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/kyc_plus_white"
+        app:srcCompat="@drawable/kyc_plus_ic_authentication_security_24_face_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kyc_sdk_16dp"
+        android:layout_marginEnd="@dimen/kyc_sdk_4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pi_capture"
+        app:layout_constraintStart_toEndOf="@id/iv_feedback"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="@dimen/kyc_sdk_16dp"
+        app:kycPlusTypographyStyle="kyc_plus_title_small_demi_inverted"
+        tools:text="The photo will be taken automatically" />
+
+    <ProgressBar
+        android:id="@+id/pi_capture"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="@dimen/kyc_sdk_32dp"
+        android:layout_height="@dimen/kyc_sdk_32dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/kyc_plus_progress_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_feedback"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="30" />
+</androidx.constraintlayout.widget.ConstraintLayout>

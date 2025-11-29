@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/kyc_plus_color_primary"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <RelativeLayout
+        android:id="@+id/dummyCameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/selfieCameraLoc"
+                android:layout_width="match_parent"
+                android:layout_height="547dp"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/selfieCameraSize"
+                    android:layout_width="240dp"
+                    android:layout_height="320dp"
+                    android:background="#000000"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:id="@+id/selfieCameraPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selfieMaskLayout"
+                android:layout_width="375dp"
+                android:layout_height="667dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_background" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraContour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_contour" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraDottedContour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_dotted_contour" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/kyc_plus_aurora_overlay" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.iab.digitalidentity.ui.commonviews.OneKycVerificationView
+        android:id="@+id/one_kyc_verification_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ViewStub
+        android:id="@+id/view_stub_fr_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_onekyc_fr_status" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/kyc_sdk_72dp"
+        android:layout_height="@dimen/kyc_sdk_72dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="?attr/digital_identity_fill_active_primary" />
+</FrameLayout>

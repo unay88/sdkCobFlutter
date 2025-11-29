@@ -1,0 +1,2222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="digital_identity_body_moderate_active_color"/>
+    <attr format="color" name="digital_identity_body_moderate_default_color"/>
+    <attr format="color" name="digital_identity_body_moderate_error_color"/>
+    <attr format="reference" name="digital_identity_body_moderate_font_name"/>
+    <attr format="dimension" name="digital_identity_body_moderate_font_size"/>
+    <attr format="color" name="digital_identity_body_moderate_inactive_color"/>
+    <attr format="color" name="digital_identity_body_moderate_inverted_color"/>
+    <attr format="dimension" name="digital_identity_body_moderate_line_spacing"/>
+    <attr format="color" name="digital_identity_body_moderate_static_black_color"/>
+    <attr format="color" name="digital_identity_body_moderate_static_white_color"/>
+    <attr format="color" name="digital_identity_body_moderate_warning_color"/>
+    <attr format="color" name="digital_identity_body_small_active_color"/>
+    <attr format="color" name="digital_identity_body_small_default_color"/>
+    <attr format="color" name="digital_identity_body_small_error_color"/>
+    <attr format="reference" name="digital_identity_body_small_font_name"/>
+    <attr format="dimension" name="digital_identity_body_small_font_size"/>
+    <attr format="color" name="digital_identity_body_small_inactive_color"/>
+    <attr format="color" name="digital_identity_body_small_inverted_color"/>
+    <attr format="dimension" name="digital_identity_body_small_line_spacing"/>
+    <attr format="color" name="digital_identity_body_small_static_black_color"/>
+    <attr format="color" name="digital_identity_body_small_static_green_color"/>
+    <attr format="color" name="digital_identity_body_small_static_white_color"/>
+    <attr format="color" name="digital_identity_body_small_warning_color"/>
+    <attr format="color" name="digital_identity_border_active"/>
+    <attr format="color" name="digital_identity_border_default"/>
+    <attr format="color" name="digital_identity_border_error"/>
+    <attr format="color" name="digital_identity_border_focus"/>
+    <attr format="color" name="digital_identity_border_inactive"/>
+    <attr format="color" name="digital_identity_border_mute_primary"/>
+    <attr format="color" name="digital_identity_border_pressed"/>
+    <attr format="color" name="digital_identity_border_static_black"/>
+    <attr format="color" name="digital_identity_border_static_white"/>
+    <attr format="color" name="digital_identity_border_warning"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_active_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_default_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_error_color"/>
+    <attr format="reference" name="digital_identity_caption_moderate_book_font_name"/>
+    <attr format="dimension" name="digital_identity_caption_moderate_book_font_size"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_inactive_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_inverted_color"/>
+    <attr format="dimension" name="digital_identity_caption_moderate_book_line_spacing"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_static_black_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_static_white_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_book_warning_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_active_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_default_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_error_color"/>
+    <attr format="reference" name="digital_identity_caption_moderate_demi_font_name"/>
+    <attr format="dimension" name="digital_identity_caption_moderate_demi_font_size"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_inactive_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_inverted_color"/>
+    <attr format="dimension" name="digital_identity_caption_moderate_demi_line_spacing"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_static_black_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_static_white_color"/>
+    <attr format="color" name="digital_identity_caption_moderate_demi_warning_color"/>
+    <attr format="color" name="digital_identity_caption_small_book_active_color"/>
+    <attr format="color" name="digital_identity_caption_small_book_default_color"/>
+    <attr format="color" name="digital_identity_caption_small_book_error_color"/>
+    <attr format="reference" name="digital_identity_caption_small_book_font_name"/>
+    <attr format="dimension" name="digital_identity_caption_small_book_font_size"/>
+    <attr format="color" name="digital_identity_caption_small_book_inactive_color"/>
+    <attr format="color" name="digital_identity_caption_small_book_inverted_color"/>
+    <attr format="dimension" name="digital_identity_caption_small_book_line_spacing"/>
+    <attr format="color" name="digital_identity_caption_small_book_static_black_color"/>
+    <attr format="color" name="digital_identity_caption_small_book_static_white_color"/>
+    <attr format="color" name="digital_identity_caption_small_book_warning_color"/>
+    <attr format="color" name="digital_identity_caption_small_demi_active_color"/>
+    <attr format="color" name="digital_identity_caption_small_demi_default_color"/>
+    <attr format="color" name="digital_identity_caption_small_demi_error_color"/>
+    <attr format="reference" name="digital_identity_caption_small_demi_font_name"/>
+    <attr format="dimension" name="digital_identity_caption_small_demi_font_size"/>
+    <attr format="color" name="digital_identity_caption_small_demi_inactive_color"/>
+    <attr format="color" name="digital_identity_caption_small_demi_inverted_color"/>
+    <attr format="dimension" name="digital_identity_caption_small_demi_line_spacing"/>
+    <attr format="color" name="digital_identity_caption_small_demi_static_black_color"/>
+    <attr format="color" name="digital_identity_caption_small_demi_static_white_color"/>
+    <attr format="color" name="digital_identity_caption_small_demi_warning_color"/>
+    <attr format="color" name="digital_identity_fill_active_primary"/>
+    <attr format="color" name="digital_identity_fill_active_secondary"/>
+    <attr format="color" name="digital_identity_fill_background_primary"/>
+    <attr format="color" name="digital_identity_fill_background_quaternary"/>
+    <attr format="color" name="digital_identity_fill_background_secondary"/>
+    <attr format="color" name="digital_identity_fill_background_tertiary"/>
+    <attr format="color" name="digital_identity_fill_error_primary"/>
+    <attr format="color" name="digital_identity_fill_error_secondary"/>
+    <attr format="color" name="digital_identity_fill_inactive_primary"/>
+    <attr format="color" name="digital_identity_fill_inactive_secondary"/>
+    <attr format="color" name="digital_identity_fill_mute_primary"/>
+    <attr format="color" name="digital_identity_fill_mute_secondary"/>
+    <attr format="color" name="digital_identity_fill_overlay"/>
+    <attr format="color" name="digital_identity_fill_pressed"/>
+    <attr format="color" name="digital_identity_fill_product_transport_logistics"/>
+    <attr format="color" name="digital_identity_fill_static_black"/>
+    <attr format="color" name="digital_identity_fill_static_white"/>
+    <attr format="color" name="digital_identity_fill_warning_primary"/>
+    <attr format="color" name="digital_identity_fill_warning_secondary"/>
+    <attr format="reference" name="digital_identity_font_bold"/>
+    <attr format="reference" name="digital_identity_font_regular"/>
+    <attr format="reference" name="digital_identity_font_thin"/>
+    <attr format="color" name="digital_identity_icon_dynamic_active"/>
+    <attr format="color" name="digital_identity_icon_dynamic_default"/>
+    <attr format="color" name="digital_identity_icon_dynamic_error"/>
+    <attr format="color" name="digital_identity_icon_dynamic_inactive"/>
+    <attr format="color" name="digital_identity_icon_dynamic_inverted"/>
+    <attr format="color" name="digital_identity_icon_dynamic_warning"/>
+    <attr format="color" name="digital_identity_icon_static_black"/>
+    <attr format="color" name="digital_identity_icon_static_inactive"/>
+    <attr format="color" name="digital_identity_icon_static_white"/>
+    <attr format="dimension" name="digital_identity_shadow_high_blur"/>
+    <attr format="color" name="digital_identity_shadow_high_color"/>
+    <attr format="dimension" name="digital_identity_shadow_high_x"/>
+    <attr format="dimension" name="digital_identity_shadow_high_y"/>
+    <attr format="dimension" name="digital_identity_shadow_low_blur"/>
+    <attr format="color" name="digital_identity_shadow_low_color"/>
+    <attr format="dimension" name="digital_identity_shadow_low_x"/>
+    <attr format="dimension" name="digital_identity_shadow_low_y"/>
+    <attr format="dimension" name="digital_identity_spacing_10x"/>
+    <attr format="dimension" name="digital_identity_spacing_16x"/>
+    <attr format="dimension" name="digital_identity_spacing_2x"/>
+    <attr format="dimension" name="digital_identity_spacing_3x"/>
+    <attr format="dimension" name="digital_identity_spacing_4x"/>
+    <attr format="dimension" name="digital_identity_spacing_5x"/>
+    <attr format="dimension" name="digital_identity_spacing_6x"/>
+    <attr format="dimension" name="digital_identity_spacing_8x"/>
+    <attr format="dimension" name="digital_identity_spacing_x"/>
+    <attr format="color" name="digital_identity_title_extra_large_active_color"/>
+    <attr format="color" name="digital_identity_title_extra_large_default_color"/>
+    <attr format="color" name="digital_identity_title_extra_large_error_color"/>
+    <attr format="reference" name="digital_identity_title_extra_large_font_name"/>
+    <attr format="dimension" name="digital_identity_title_extra_large_font_size"/>
+    <attr format="color" name="digital_identity_title_extra_large_inactive_color"/>
+    <attr format="color" name="digital_identity_title_extra_large_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_extra_large_line_spacing"/>
+    <attr format="color" name="digital_identity_title_extra_large_static_black_color"/>
+    <attr format="color" name="digital_identity_title_extra_large_static_white_color"/>
+    <attr format="color" name="digital_identity_title_extra_large_warning_color"/>
+    <attr format="color" name="digital_identity_title_hero_active_color"/>
+    <attr format="color" name="digital_identity_title_hero_default_color"/>
+    <attr format="color" name="digital_identity_title_hero_error_color"/>
+    <attr format="color" name="digital_identity_title_hero_extra_active_color"/>
+    <attr format="color" name="digital_identity_title_hero_extra_default_color"/>
+    <attr format="color" name="digital_identity_title_hero_extra_error_color"/>
+    <attr format="reference" name="digital_identity_title_hero_extra_font_name"/>
+    <attr format="dimension" name="digital_identity_title_hero_extra_font_size"/>
+    <attr format="color" name="digital_identity_title_hero_extra_inactive_color"/>
+    <attr format="color" name="digital_identity_title_hero_extra_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_hero_extra_line_spacing"/>
+    <attr format="color" name="digital_identity_title_hero_extra_static_black_color"/>
+    <attr format="color" name="digital_identity_title_hero_extra_static_white_color"/>
+    <attr format="color" name="digital_identity_title_hero_extra_warning_color"/>
+    <attr format="reference" name="digital_identity_title_hero_font_name"/>
+    <attr format="dimension" name="digital_identity_title_hero_font_size"/>
+    <attr format="color" name="digital_identity_title_hero_inactive_color"/>
+    <attr format="color" name="digital_identity_title_hero_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_hero_line_spacing"/>
+    <attr format="color" name="digital_identity_title_hero_static_black_color"/>
+    <attr format="color" name="digital_identity_title_hero_static_white_color"/>
+    <attr format="color" name="digital_identity_title_hero_warning_color"/>
+    <attr format="color" name="digital_identity_title_large_active_color"/>
+    <attr format="color" name="digital_identity_title_large_default_color"/>
+    <attr format="color" name="digital_identity_title_large_error_color"/>
+    <attr format="reference" name="digital_identity_title_large_font_name"/>
+    <attr format="dimension" name="digital_identity_title_large_font_size"/>
+    <attr format="color" name="digital_identity_title_large_inactive_color"/>
+    <attr format="color" name="digital_identity_title_large_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_large_line_spacing"/>
+    <attr format="color" name="digital_identity_title_large_static_black_color"/>
+    <attr format="color" name="digital_identity_title_large_static_white_color"/>
+    <attr format="color" name="digital_identity_title_large_warning_color"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_active_color"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_default_color"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_error_color"/>
+    <attr format="reference" name="digital_identity_title_moderate_bold_font_name"/>
+    <attr format="dimension" name="digital_identity_title_moderate_bold_font_size"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_inactive_color"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_moderate_bold_line_spacing"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_static_black_color"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_static_white_color"/>
+    <attr format="color" name="digital_identity_title_moderate_bold_warning_color"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_active_color"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_default_color"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_error_color"/>
+    <attr format="reference" name="digital_identity_title_moderate_demi_font_name"/>
+    <attr format="dimension" name="digital_identity_title_moderate_demi_font_size"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_inactive_color"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_moderate_demi_line_spacing"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_static_black_color"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_static_white_color"/>
+    <attr format="color" name="digital_identity_title_moderate_demi_warning_color"/>
+    <attr format="color" name="digital_identity_title_small_bold_active_color"/>
+    <attr format="color" name="digital_identity_title_small_bold_default_color"/>
+    <attr format="color" name="digital_identity_title_small_bold_error_color"/>
+    <attr format="reference" name="digital_identity_title_small_bold_font_name"/>
+    <attr format="dimension" name="digital_identity_title_small_bold_font_size"/>
+    <attr format="color" name="digital_identity_title_small_bold_inactive_color"/>
+    <attr format="color" name="digital_identity_title_small_bold_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_small_bold_line_spacing"/>
+    <attr format="color" name="digital_identity_title_small_bold_static_black_color"/>
+    <attr format="color" name="digital_identity_title_small_bold_static_white_color"/>
+    <attr format="color" name="digital_identity_title_small_bold_warning_color"/>
+    <attr format="color" name="digital_identity_title_small_demi_active_color"/>
+    <attr format="color" name="digital_identity_title_small_demi_default_color"/>
+    <attr format="color" name="digital_identity_title_small_demi_error_color"/>
+    <attr format="reference" name="digital_identity_title_small_demi_font_name"/>
+    <attr format="dimension" name="digital_identity_title_small_demi_font_size"/>
+    <attr format="color" name="digital_identity_title_small_demi_inactive_color"/>
+    <attr format="color" name="digital_identity_title_small_demi_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_small_demi_line_spacing"/>
+    <attr format="color" name="digital_identity_title_small_demi_static_black_color"/>
+    <attr format="color" name="digital_identity_title_small_demi_static_white_color"/>
+    <attr format="color" name="digital_identity_title_small_demi_warning_color"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_active_color"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_default_color"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_error_color"/>
+    <attr format="reference" name="digital_identity_title_tiny_bold_font_name"/>
+    <attr format="dimension" name="digital_identity_title_tiny_bold_font_size"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_inactive_color"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_tiny_bold_line_spacing"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_static_black_color"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_static_white_color"/>
+    <attr format="color" name="digital_identity_title_tiny_bold_warning_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_active_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_default_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_error_color"/>
+    <attr format="reference" name="digital_identity_title_tiny_demi_font_name"/>
+    <attr format="dimension" name="digital_identity_title_tiny_demi_font_size"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_inactive_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_inverted_color"/>
+    <attr format="dimension" name="digital_identity_title_tiny_demi_line_spacing"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_static_black_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_static_green_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_static_white_color"/>
+    <attr format="color" name="digital_identity_title_tiny_demi_warning_color"/>
+    <attr format="color" name="digital_identity_typography_active"/>
+    <attr format="color" name="digital_identity_typography_default_body"/>
+    <attr format="color" name="digital_identity_typography_default_caption"/>
+    <attr format="color" name="digital_identity_typography_default_title"/>
+    <attr format="color" name="digital_identity_typography_error"/>
+    <attr format="color" name="digital_identity_typography_inactive"/>
+    <attr format="color" name="digital_identity_typography_inverted"/>
+    <attr format="color" name="digital_identity_typography_static_black"/>
+    <attr format="color" name="digital_identity_typography_static_green"/>
+    <attr format="color" name="digital_identity_typography_static_white"/>
+    <attr format="color" name="digital_identity_typography_warning"/>
+    <attr format="reference" name="kyc_stepViewStyle"/>
+    <color name="kyc_plus_bad_image_quality_feedback">#f06400</color>
+    <color name="kyc_plus_black">#000000</color>
+    <color name="kyc_plus_black_10">#E8E8E8</color>
+    <color name="kyc_plus_black_80">#52575C</color>
+    <color name="kyc_plus_blue_dark">#00647A</color>
+    <color name="kyc_plus_blue_later">#00AED6</color>
+    <color name="kyc_plus_blue_light">#00819E</color>
+    <color name="kyc_plus_color_primary">#FFFFFF</color>
+    <color name="kyc_plus_color_window_background">#FFFFFF</color>
+    <color name="kyc_plus_dark_blue_end">#00819E</color>
+    <color name="kyc_plus_dark_blue_start">#00647A</color>
+    <color name="kyc_plus_done_step">#00880D</color>
+    <color name="kyc_plus_good_image_quality_feedback">#009c11</color>
+    <color name="kyc_plus_green">#45AB4A</color>
+    <color name="kyc_plus_green_pinjam">#008A10</color>
+    <color name="kyc_plus_icon_tint_color">#000000</color>
+    <color name="kyc_plus_next_step">#EDEDED</color>
+    <color name="kyc_plus_orange">#E8900E</color>
+    <color name="kyc_plus_red">#EA001F</color>
+    <color name="kyc_plus_red_10">#EE2737</color>
+    <color name="kyc_plus_shimmer_theme_color">#40c6e1</color>
+    <color name="kyc_plus_theme_color">#00AED6</color>
+    <color name="kyc_plus_typography_active">#00700B</color>
+    <color name="kyc_plus_typography_default_title">#1C1D1D</color>
+    <color name="kyc_plus_white">#FFFFFF</color>
+    <dimen name="kyc_sdk_0dp">0dp</dimen>
+    <dimen name="kyc_sdk_100dp">100dp</dimen>
+    <dimen name="kyc_sdk_10dp">10dp</dimen>
+    <dimen name="kyc_sdk_12dp">12dp</dimen>
+    <dimen name="kyc_sdk_14dp">14dp</dimen>
+    <dimen name="kyc_sdk_156dp">156dp</dimen>
+    <dimen name="kyc_sdk_16dp">16dp</dimen>
+    <dimen name="kyc_sdk_18dp">18dp</dimen>
+    <dimen name="kyc_sdk_1dp">1dp</dimen>
+    <dimen name="kyc_sdk_20dp">20dp</dimen>
+    <dimen name="kyc_sdk_24dp">24dp</dimen>
+    <dimen name="kyc_sdk_28dp">28dp</dimen>
+    <dimen name="kyc_sdk_2dp">2dp</dimen>
+    <dimen name="kyc_sdk_32dp">32dp</dimen>
+    <dimen name="kyc_sdk_40dp">40dp</dimen>
+    <dimen name="kyc_sdk_44dp">44dp</dimen>
+    <dimen name="kyc_sdk_46dp">46dp</dimen>
+    <dimen name="kyc_sdk_48dp">48dp</dimen>
+    <dimen name="kyc_sdk_49dp">49dp</dimen>
+    <dimen name="kyc_sdk_4dp">4dp</dimen>
+    <dimen name="kyc_sdk_50dp">50dp</dimen>
+    <dimen name="kyc_sdk_56dp">56dp</dimen>
+    <dimen name="kyc_sdk_64dp">64dp</dimen>
+    <dimen name="kyc_sdk_6dp">6dp</dimen>
+    <dimen name="kyc_sdk_72dp">72dp</dimen>
+    <dimen name="kyc_sdk_84dp">84dp</dimen>
+    <dimen name="kyc_sdk_8dp">8dp</dimen>
+    <dimen name="kyc_sdk_90dp">90dp</dimen>
+    <item name="digital_identity_font_bold" type="font"/>
+    <item name="digital_identity_font_regular" type="font"/>
+    <item name="digital_identity_font_thin" type="font"/>
+    <string name="app_name">Gojek CV</string>
+    <string name="gofin_go_pay_kyc_confirmation_retake">Retake</string>
+    <string name="gofin_go_pay_kyc_confirmation_use_this_photo">Use this photo</string>
+    <string name="gofin_kyc_camera_ktp_title">Take your e-KTP photo</string>
+    <string name="gofin_kyc_camera_passport_confirmation">Review your passport photo</string>
+    <string name="gofin_kyc_camera_passport_description">Make sure your passport fits within the photo area and is readable.</string>
+    <string name="gofin_kyc_camera_selfie_passport_confirmation">Review your selfie</string>
+    <string name="gofin_kyc_camera_selfie_passport_title">Take a selfie</string>
+    <string name="gofin_kyc_camera_take_selfie_description">Position your passport &amp; face inside the photo area. Make sure your hand is steady, then take the pic.</string>
+    <string name="gofin_kyc_delete_document_confirmation_cancel_cta">Cancel</string>
+    <string name="gofin_kyc_delete_document_confirmation_yes_cta">Yes, delete</string>
+    <string name="gofin_kyc_home_cta">I have my e-KTP ready</string>
+    <string name="gofin_kyc_home_variant_c_first">Capture physical e-KTP card</string>
+    <string name="gofin_kyc_home_variant_c_second">No photocopied or scanned</string>
+    <string name="gofin_kyc_preview_screen_selfie_description">You can retake the photo or continue to the next step.</string>
+    <string name="gofin_kyc_rejection_detail_message">Your KTP was rejected because we could not verify the details from the authorities on your KTP, please upload again.</string>
+    <string name="gofin_kyc_rejection_title_generic">Your upgrade has failed</string>
+    <string name="gofin_kyc_single_document_delete_bottom_sheet_subtitle">Just an FYI, if you choose to delete, you\'ll need to re-submit it.</string>
+    <string name="gofin_kyc_take_id_passport_photo_cta">Take a passport photo</string>
+    <string name="gofin_kyc_upload_bank_monitored_subtitle">Your information will remain confidential &amp; only be used for verification.</string>
+    <string name="gofin_kyc_upload_bank_monitored_title">GoPay is supervised by Bank Indonesia</string>
+    <string name="gofin_kyc_widget_header">Upgrade to GoPay Plus</string>
+    <string name="gofin_kyc_widget_header_description">You are 3 mins away from unlocking transfer</string>
+    <string name="gopay_kyc_review_and_confirm_and_title">and</string>
+    <string name="gopay_kyc_review_and_confirm_continue_agree_title">By continuing, you agree to our</string>
+    <string name="gopay_kyc_review_and_confirm_privacy_policy_title">Privacy Policy</string>
+    <string name="gopay_kyc_review_and_confirm_tnc_title">Terms &amp; Conditions</string>
+    <string name="gopay_savings_benefit_widget_description">Once you open a GoPay Tabungan account, you will be automatically upgraded to GoPay Plus!</string>
+    <string name="gopay_savings_one_kyc_widget_dropped_forms_description">Then fill out some details and we will process your application right away.</string>
+    <string name="gopay_savings_one_kyc_widget_dropped_kyc_submit_description">Then fill out some details and we will process your application right away.</string>
+    <string name="gopay_savings_one_kyc_widget_dropped_selfie_description">Then fill out some details and we will process your application right away.</string>
+    <string name="gopay_savings_one_kyc_widget_jago_rejected_reason">Your submission didn’t meet our guidelines. Click Help for more assistance.</string>
+    <string name="gopay_savings_one_kyc_widget_rejected_title">Your GoPay Tabungan application is rejected</string>
+    <string name="gopay_savings_one_kyc_widget_verification_kyc">KTP &amp; selfie verification</string>
+    <string name="gopay_savings_one_kyc_widget_verification_personaldetail">Personal details verification</string>
+    <string name="gopay_savings_slik_form_navigation_title">GoPay Tabungan activation</string>
+    <string name="jago_one_kyc_capture_gopayplus_benefit_widget_description">Once you open a Jago account from Gojek app, you will be automatically upgraded to GoPay Plus!</string>
+    <string name="jago_one_kyc_help_cta">Help</string>
+    <string name="jago_one_kyc_income_source">Source of income</string>
+    <string name="jago_one_kyc_monthly_income">Monthly income</string>
+    <string name="jago_one_kyc_occupation">Occupation</string>
+    <string name="jago_one_kyc_personal_details_header_subtitle">Your data will remain confidential &amp; only be used for verification.</string>
+    <string name="jago_one_kyc_personal_details_header_title">Fill out your personal details</string>
+    <string name="jago_one_kyc_personal_details_navigation_subtitle">Step %1$s/%2$s</string>
+    <string name="jago_one_kyc_personal_details_navigation_title">Jago application</string>
+    <string name="jago_one_kyc_widget_dropped_forms_cta">Fill out personal details</string>
+    <string name="jago_one_kyc_widget_dropped_forms_description">Once you have a Jago account, you will get the simplest way to manage money.</string>
+    <string name="jago_one_kyc_widget_dropped_forms_title">Complete your personal details</string>
+    <string name="jago_one_kyc_widget_dropped_kyc_submit_cta">Submit photos</string>
+    <string name="jago_one_kyc_widget_dropped_kyc_submit_description">Then fill out some details and Jago will process your application right away.</string>
+    <string name="jago_one_kyc_widget_dropped_kyc_submit_title">Let\'s submit your KTP photo and selfie!</string>
+    <string name="jago_one_kyc_widget_dropped_selfie_cta">Take a selfie</string>
+    <string name="jago_one_kyc_widget_dropped_selfie_description">Then fill out some details and Jago will process your application right away.</string>
+    <string name="jago_one_kyc_widget_dropped_selfie_title">Let\'s take a selfie!</string>
+    <string name="jago_one_kyc_widget_dropped_step_ktp">Upload ID card photo</string>
+    <string name="jago_one_kyc_widget_dropped_step_personal_details">Personal details</string>
+    <string name="jago_one_kyc_widget_dropped_step_selfie">Take a selfie</string>
+    <string name="jago_one_kyc_widget_dropped_submit_forms_cta">Submit personal details</string>
+    <string name="jago_one_kyc_widget_dropped_submit_forms_description">Once you submit it, Jago will process your application right away.</string>
+    <string name="jago_one_kyc_widget_dropped_submit_forms_title">Let’s submit your personal details</string>
+    <string name="jago_one_kyc_widget_error_cta">Refresh</string>
+    <string name="jago_one_kyc_widget_initial_cta">Get started</string>
+    <string name="jago_one_kyc_widget_jago_rejected_reason">Your submission didn’t meet Jago’s guidelines</string>
+    <string name="jago_one_kyc_widget_jago_rejected_retry_cta">Retry application</string>
+    <string name="jago_one_kyc_widget_rejected_retake_cta">Retake KTP photo &amp; selfie</string>
+    <string name="jago_one_kyc_widget_rejected_title">Your Jago application is rejected</string>
+    <string name="jago_one_kyc_widget_uploading_document_failed_cta">Reupload photos</string>
+    <string name="jago_one_kyc_widget_uploading_document_failed_description">Something’s got in the way when uploading photos. Let’s reupload.</string>
+    <string name="jago_one_kyc_widget_uploading_document_failed_title">Failed to upload your photos</string>
+    <string name="jago_one_kyc_widget_verification_estimation_generic">Please wait. If the process took longer than 24 hours, you can click Help.</string>
+    <string name="jago_one_kyc_widget_verification_estimation_traffic">There’s a heavy queue. Please wait for a moment.</string>
+    <string name="jago_one_kyc_widget_verification_kyc">KTP &amp; selfie verification by GoPay</string>
+    <string name="jago_one_kyc_widget_verification_personal_details">Personal details verification by Jago</string>
+    <string name="jago_one_kyc_widget_verification_title">Data verification in progress</string>
+    <string name="kyc_sdk_no_network_unable_to_launch_settings">Unable to open settings</string>
+    <string name="kyc_sdk_take_id_photo">Take a %s photo</string>
+    <string name="kyc_sdk_wait_a_min_description">Wait a minute, please…</string>
+    <string name="one_kyc_mother_maiden_name">Mother\'s maiden name</string>
+    <string name="one_kyc_mother_maiden_name_blacklist_error">Enter name without title e.g. \"%s\"</string>
+    <string name="one_kyc_mother_maiden_name_blank_error">Please enter at least 3 characters</string>
+    <string name="one_kyc_mother_maiden_name_desc">Enter below as stated in your mother\'s e-KTP without title or punctuation.</string>
+    <string name="one_kyc_mother_maiden_name_invalid_error">Type name without special characters and/or numbers</string>
+    <string name="one_kyc_mother_maiden_name_placeholder">Enter the name here</string>
+    <string name="one_kyc_slik_form_submit">Submit</string>
+    <string name="one_kyc_widget_error_no_connection_description">Check your internet and click refresh to see your GoPay upgrade status.</string>
+    <string name="one_kyc_widget_error_no_connection_description_gps">Check your internet &amp; click refresh to track your activation status.</string>
+    <string name="one_kyc_widget_error_no_connection_description_jago">Check your internet and click refresh to see your application progress.</string>
+    <string name="one_kyc_widget_error_no_connection_title">You seem to be offline</string>
+    <string name="one_kyc_widget_error_server_description">We\'re now working on it. Tap refresh to check your GoPay upgrade progress.</string>
+    <string name="one_kyc_widget_error_server_description_gps">We\'re now working on it. Tap refresh to track your activation status.</string>
+    <string name="one_kyc_widget_error_server_description_jago">We\'re now working on it. Tap refresh to see your application progress.</string>
+    <string name="one_kyc_widget_error_server_title">There\'s a technical error</string>
+    <string name="one_kyc_widget_status_review_generic_description">Please contact us for more help.</string>
+    <string name="one_kyc_widget_status_review_normal_title">Reviewing your documents</string>
+    <string name="one_kyc_widget_status_review_normal_transfer_cta">Transfer money in %s seconds</string>
+    <string name="one_kyc_widget_status_review_traffic_cta">Ok, got it.</string>
+    <string name="one_kyc_widget_status_review_traffic_description"><![CDATA[Sorry, you have to wait for the next <b>%1$s</b>. We’re working on this!]]></string>
+    <string name="one_kyc_widget_status_review_traffic_title">The review takes more time than usual</string>
+    <string name="one_kyc_widget_status_upgrade_failed_cta">Retry upgrade</string>
+    <string name="one_kyc_widget_status_upgrade_success_title_transfer">Upgrade successful! Taking you back to transfer...</string>
+    <string name="one_kyc_widget_status_upload_failed_cta">Reupload photos</string>
+    <string name="one_kyc_widget_status_upload_failed_description">There’s an issue with your connection. Please make sure you’re connected and try again.</string>
+    <string name="one_kyc_widget_status_upload_failed_title">Failed to upload documents</string>
+    <string name="one_kyc_widget_status_uploading_title">Uploading your documents...</string>
+    <string name="onekyc_auto_capture_continue_cta">Take automatically</string>
+    <string name="onekyc_auto_capture_exhausted_dialog_description">Seems like you\'re having trouble with the auto-capture mode.</string>
+    <string name="onekyc_auto_capture_exhausted_dialog_title">Want to take the photo manually instead?</string>
+    <string name="onekyc_auto_capture_switch_mode_cta">Take manually</string>
+    <string name="onekyc_blocked_cashloan_cicil_title">You can\'t activate GoPay Later &amp; GoPay Pinjam yet</string>
+    <string name="onekyc_blocked_cashloan_title">You can\'t activate GoPay Pinjam yet</string>
+    <string name="onekyc_blocked_cicil_title">You can\'t activate GoPay Later yet</string>
+    <string name="onekyc_blocked_cta">Got it</string>
+    <string name="onekyc_blocked_fraud_description">Please try creating an account later.</string>
+    <string name="onekyc_blocked_gopay_inprogress_description">Please wait until your GoPay Plus upgrade is done.</string>
+    <string name="onekyc_blocked_toko_title">You can\'t activate GoPay Later yet</string>
+    <string name="onekyc_blocked_vehicle_financing_title">You can\'t activate GoPay Pinjam BPKB yet</string>
+    <string name="onekyc_camera_error_desc">Please make sure that your camera is not being used by another app and try again.</string>
+    <string name="onekyc_camera_error_help_cta">Get help</string>
+    <string name="onekyc_camera_error_ok_cta">Ok, got it</string>
+    <string name="onekyc_camera_error_retry_cta">Retry</string>
+    <string name="onekyc_camera_error_title">Can\'t open your camera</string>
+    <string name="onekyc_camera_permission_desc">Turn it on in your phone settings to continue.</string>
+    <string name="onekyc_camera_permission_login_negative_cta">Log in later</string>
+    <string name="onekyc_camera_permission_login_title">To log in, camera permission is required</string>
+    <string name="onekyc_camera_permission_negative_cta">Retry later</string>
+    <string name="onekyc_camera_permission_positive_cta">Go to Settings</string>
+    <string name="onekyc_camera_permission_title">To proceed, camera permission is required</string>
+    <string name="onekyc_challenge_exhausted_cashloan_cicil_title">You can\'t activate GoPay Later &amp; GoPay Pinjam yet</string>
+    <string name="onekyc_challenge_exhausted_cashloan_title">You can\'t activate GoPay Pinjam yet</string>
+    <string name="onekyc_challenge_exhausted_cicil_title">You can\'t activate GoPay Later yet</string>
+    <string name="onekyc_challenge_exhausted_cta">Got it</string>
+    <string name="onekyc_challenge_exhausted_description">You’ve entered the wrong data too many times. Please try again after some time.</string>
+    <string name="onekyc_challenge_exhausted_gps_title">You can’t activate GoPay Tabungan by Jago yet</string>
+    <string name="onekyc_challenge_exhausted_toko_title">You can\'t activate GoPay Later yet</string>
+    <string name="onekyc_consent_accountlink_point1">No need to retake e-KTP photo</string>
+    <string name="onekyc_consent_accountlink_point2">No need to retake selfie</string>
+    <string name="onekyc_consent_accountlink_point3">Faster application process</string>
+    <string name="onekyc_consent_accountlink_point3_driver">Submit document driver</string>
+    <string name="onekyc_consent_accountlink_title_cashloan">Linking GoPay Pinjam to GoPay Plus</string>
+    <string name="onekyc_consent_accountlink_title_cashloan_cicil">Linking GoPay Later &amp; GoPay Pinjam to GoPay Plus</string>
+    <string name="onekyc_consent_accountlink_title_cicil">Linking GoPay Later to GoPay Plus</string>
+    <string name="onekyc_consent_accountlink_title_driver">Linking to GoPay Plus</string>
+    <string name="onekyc_consent_accountlink_title_toko">Linking GoPay Later to GoPay Plus</string>
+    <string name="onekyc_consent_accountlink_title_vehicle_financing">Linking GoPay Pinjam BPKB to GoPay Plus</string>
+    <string name="onekyc_consent_header_description">No need to resubmit e-KTP &amp; selfie because you\'re already GoPay Plus.</string>
+    <string name="onekyc_consent_header_description_cashloan">To apply for GoPay Pinjam, no need to resubmit e-KTP &amp; selfie because they\'re already on GoPay Plus.</string>
+    <string name="onekyc_consent_header_description_cashloan_cicil">To apply for GoPay Later &amp; GoPay Pinjam, no need to resubmit e-KTP &amp; selfie because they\'re already on GoPay Plus.</string>
+    <string name="onekyc_consent_header_description_cicil">To apply for GoPay Later, no need to resubmit e-KTP &amp; selfie because they\'re already on GoPay Plus.</string>
+    <string name="onekyc_consent_header_description_driver">No need to resubmit e-KTP &amp; selfie because you\'re already GoPay Plus.</string>
+    <string name="onekyc_consent_header_description_toko">To apply for GoPay Later, no need to resubmit e-KTP &amp; selfie because they\'re already on GoPay Plus.</string>
+    <string name="onekyc_consent_header_description_vehicle_financing">To apply for GoPay Pinjam BPKB, no need to resubmit e-KTP &amp; selfie because they\'re already on GoPay Plus.</string>
+    <string name="onekyc_consent_header_title">Link to GoPay Plus</string>
+    <string name="onekyc_consent_help">Help</string>
+    <string name="onekyc_consent_link_gopayplus">Link to GoPay Plus</string>
+    <string name="onekyc_consent_pre_help"/>
+    <string name="onekyc_consent_privacy_link">Privacy Policy</string>
+    <string name="onekyc_consent_registered_id">Registered ID</string>
+    <string name="onekyc_consent_supervised_description">Your information will remain confidential &amp; only be used for verification.</string>
+    <string name="onekyc_consent_supervised_title">Supervised by Bank Indonesia</string>
+    <string name="onekyc_consent_terms_and_policy">By continuing, you agree to our Privacy Policy and Terms &amp; Conditions</string>
+    <string name="onekyc_consent_terms_link">Terms &amp; Conditions</string>
+    <string name="onekyc_dialog_no_network_description">Check your Wi-Fi connection or cellular data and try again.</string>
+    <string name="onekyc_dialog_no_network_negative_cta">Try again</string>
+    <string name="onekyc_dialog_no_network_positive_cta">Go to Settings</string>
+    <string name="onekyc_dialog_no_network_title">You seem to be offline</string>
+    <string name="onekyc_edd_exit_confirmation_desc">We\'ll save your progress so you can come back later.</string>
+    <string name="onekyc_edd_exit_confirmation_negative_cta">Cancel</string>
+    <string name="onekyc_edd_exit_confirmation_positive_cta">Yes, exit</string>
+    <string name="onekyc_edd_exit_confirmation_title">Exit this process?</string>
+    <string name="onekyc_edd_questions_desc">As per Bank Indonesia\'s regulation, you are required to fill out this form before we process the verification.</string>
+    <string name="onekyc_edd_questions_title">Fill out your personal details to proceed</string>
+    <string name="onekyc_edd_step_income_source_label">Source of income</string>
+    <string name="onekyc_edd_step_upgrade_purpose_label">Upgrade purpose</string>
+    <string name="onekyc_error_something_went_wrong_message">We\'re unable to process your request right now. Please try again later.</string>
+    <string name="onekyc_error_something_went_wrong_ok">Got it</string>
+    <string name="onekyc_error_something_went_wrong_retry">Retry</string>
+    <string name="onekyc_error_something_went_wrong_title">Oops, something\'s wrong</string>
+    <string name="onekyc_fr_selfie_prepare_card_warning_message">The next screen contains bright &amp; flashing lights that may trigger epileptic seizures.</string>
+    <string name="onekyc_fr_selfie_prepare_card_warning_title">PHOTOSENSITIVITY WARNING</string>
+    <string name="onekyc_fr_status_contact">Help</string>
+    <string name="onekyc_fr_status_exhausted_description">You\'ve done face verification too many times now. Let\'s cool it off and try again after sometime.</string>
+    <string name="onekyc_fr_status_exhausted_title">Face verification is still failed</string>
+    <string name="onekyc_fr_status_failed_attempts">You have %s more attempts</string>
+    <string name="onekyc_fr_status_failed_description">Please make sure your face is clearly visible while doing the verification.</string>
+    <string name="onekyc_fr_status_failed_title">Couldn\'t verify your face</string>
+    <string name="onekyc_fr_status_guideline">How to take a clear photo</string>
+    <string name="onekyc_fr_status_guideline_desc_one">Find a place with enough lighting (not too dark or too bright).</string>
+    <string name="onekyc_fr_status_guideline_desc_two">Don’t wear mask, hat, or any kind of glasses.</string>
+    <string name="onekyc_fr_status_guideline_title_one">Photo has to be well-lit</string>
+    <string name="onekyc_fr_status_guideline_title_two">Face has to be clearly visible</string>
+    <string name="onekyc_fr_status_navigation_title">Face verification</string>
+    <string name="onekyc_fr_status_retake">Retry</string>
+    <string name="onekyc_fr_verification_polling">Verifying your face, please don\'t leave the screen yet.</string>
+    <string name="onekyc_fr_verification_success">Face verification success</string>
+    <string name="onekyc_fr_verification_timer">This will take up to %d seconds</string>
+    <string name="onekyc_fr_verification_timer_pending">Something got in the way, this will take longer.</string>
+    <string name="onekyc_guideline_correct">Correct</string>
+    <string name="onekyc_guideline_ktp_autocapture_info_description">You just need to place your e-KTP according to these steps below, and we’ll capture it for you.</string>
+    <string name="onekyc_guideline_ktp_autocapture_info_title">Your photo will be taken automatically</string>
+    <string name="onekyc_guideline_ktp_instruction_1">Clear your camera lens and hold your phone steady to avoid blurry photo.</string>
+    <string name="onekyc_guideline_ktp_instruction_2">Find a place with enough lighting (not too dark or too bright).</string>
+    <string name="onekyc_guideline_ktp_instruction_3">Make sure your e-KTP fits the frame.</string>
+    <string name="onekyc_guideline_ktp_instruction_4">Please stay still while we capture it.</string>
+    <string name="onekyc_guideline_ktp_instruction_4_manual">Take the picture when you’re ready</string>
+    <string name="onekyc_guideline_ktp_title">Guide for taking an e-KTP photo</string>
+    <string name="onekyc_guideline_selfie_autocapture_info_description">You just need to position your face according to these steps below, and we’ll capture it for you.</string>
+    <string name="onekyc_guideline_selfie_autocapture_info_title">Your photo will be taken automatically</string>
+    <string name="onekyc_guideline_selfie_instruction_1">Make sure your entire face fits the frame.</string>
+    <string name="onekyc_guideline_selfie_instruction_2">Don’t wear mask, hat, or any kind of glasses.</string>
+    <string name="onekyc_guideline_selfie_instruction_3">Clear your camera lens and hold your phone steady to avoid blurry photo.</string>
+    <string name="onekyc_guideline_selfie_instruction_4">Find a place with enough lighting (not too dark or too bright).</string>
+    <string name="onekyc_guideline_selfie_title">Guide for taking selfie</string>
+    <string name="onekyc_guideline_wrong">Wrong</string>
+    <string name="onekyc_home_cashloan_cicil_upgrade_card_information">Note: Once your GoPay Later &amp; GoPay Pinjam is activated, your GoPay account will be upgraded to GoPay Plus!</string>
+    <string name="onekyc_home_cashloan_upgrade_card_information">Once your GoPay Pinjam is activated, your GoPay account will be upgraded to GoPay Plus!</string>
+    <string name="onekyc_home_cicil_upgrade_card_information">Once your GoPay Later is activated, your GoPay account will be upgraded to GoPay Plus!</string>
+    <string name="onekyc_home_cta_text">Take e-KTP photo</string>
+    <string name="onekyc_home_driver_upgrade_card_information">Notes: Once you\'re verified, your GoPay account will be automatically upgraded to GoPay Plus!</string>
+    <string name="onekyc_home_toko_upgrade_card_information">Setelah verifikasi data diri, akun GoPay kamu akan otomatis di-upgrade ke GoPay Plus.</string>
+    <string name="onekyc_home_toolbar_title">Verifikasi Data Diri</string>
+    <string name="onekyc_home_vehicle_financing_upgrade_card_information">Notes: Once your GoPay Pinjam BPKB is activated, your GoPay account will be automatically upgraded to GoPay Plus!</string>
+    <string name="onekyc_home_widget_cashloan_cicil_title">You\'re 3 mins away from activating GoPay Later &amp; GoPay Pinjam</string>
+    <string name="onekyc_home_widget_cashloan_title">You\'re 3 mins away from activating GoPay Pinjam</string>
+    <string name="onekyc_home_widget_cicil_title">You\'re 3 mins away from activating GoPay Later</string>
+    <string name="onekyc_home_widget_driver_title">Take your e-KTP &amp; Selfie</string>
+    <string name="onekyc_home_widget_guideline_text">View guidelines</string>
+    <string name="onekyc_home_widget_step_ktp_title">Take an e-KTP photo</string>
+    <string name="onekyc_home_widget_step_personal_details_description">Takes less than 5 minutes</string>
+    <string name="onekyc_home_widget_step_personal_details_driver_title">Submit document driver</string>
+    <string name="onekyc_home_widget_step_personal_details_title">Fill personal data</string>
+    <string name="onekyc_home_widget_step_selfie_title">Take a selfie</string>
+    <string name="onekyc_home_widget_title">Siapkan data identitas Anda</string>
+    <string name="onekyc_home_widget_toko_title">Verifikasinya sebentar aja, kok!</string>
+    <string name="onekyc_home_widget_vehicle_financing_title">3 steps to activate your GoPay Pinjam BPKB:</string>
+    <string name="onekyc_ktp_scan_verification_polling">Verifying your e-KTP, please don\'t leave the screen yet.</string>
+    <string name="onekyc_models_download_loader_description">Please wait and do not leave this screen</string>
+    <string name="onekyc_models_download_loader_title">Preparing the upgrade process...</string>
+    <string name="onekyc_result_error_message_thread_detected">Please make sure that your device &amp; app is not tampered.</string>
+    <string name="onekyc_review_document_delete_confirmation_cancel">Cancel</string>
+    <string name="onekyc_review_document_delete_confirmation_description">Once deleted, you\'ll have to start over from the beginning if later you want to upgrade to GoPay Plus.</string>
+    <string name="onekyc_review_document_delete_confirmation_title">Sure you want to delete this photo?</string>
+    <string name="onekyc_review_document_delete_confirmation_yes">Yes, I\'m sure</string>
+    <string name="onekyc_review_document_full_instruction">Full instructions?</string>
+    <string name="onekyc_review_document_guideline_info1">Fits in the frame</string>
+    <string name="onekyc_review_document_guideline_info2">Has enough lighting</string>
+    <string name="onekyc_review_document_guideline_info3">Looks clear and not blurry</string>
+    <string name="onekyc_review_document_guideline_info_title">Make sure the photo already:</string>
+    <string name="onekyc_review_document_info">Make sure your photos are clear and visible so we can process it right away.</string>
+    <string name="onekyc_review_document_ktp">e-KTP photo</string>
+    <string name="onekyc_review_document_ktp_title">Review your e-KTP photo</string>
+    <string name="onekyc_review_document_looksgood">Looks good</string>
+    <string name="onekyc_review_document_resume_info_part1">You already took photos,</string>
+    <string name="onekyc_review_document_resume_info_part2">you just need to submit it</string>
+    <string name="onekyc_review_document_resume_info_part3"> and your GoPay will be upgraded to GoPay Plus!</string>
+    <string name="onekyc_review_document_retake">Retake photo</string>
+    <string name="onekyc_review_document_selfie">Selfie</string>
+    <string name="onekyc_review_document_selfie_title">Review your selfie</string>
+    <string name="onekyc_review_document_submit">Submit</string>
+    <string name="onekyc_review_document_take_photo">Take photo</string>
+    <string name="onekyc_review_foreigner_info">Are you a foreigner?</string>
+    <string name="onekyc_review_screen_title">Review and submit your photos</string>
+    <string name="onekyc_review_switch_description">Once you switched, you\'ll have to start over and the captured photos will be deleted.</string>
+    <string name="onekyc_review_switch_keep_ktp">Keep e-KTP</string>
+    <string name="onekyc_review_switch_to_passport_title">Sure you want to switch to passport?</string>
+    <string name="onekyc_review_switch_yes">Yes, I\'m sure</string>
+    <string name="onekyc_review_use_passport">Use passport</string>
+    <string name="onekyc_selfie_exhausted_close_cta">Maybe later</string>
+    <string name="onekyc_selfie_exhausted_ready_cta">Ok, I’m ready</string>
+    <string name="onekyc_selfie_exhausted_title">For smoother verification, make sure:</string>
+    <string name="onekyc_upload_failed_description">There’s an issue with your connection. Please make sure you’re connected and try again.</string>
+    <string name="onekyc_upload_failed_retry">Retry</string>
+    <string name="onekyc_upload_failed_title">Failed to upload documents</string>
+    <string name="onekyc_upload_inprogress_description">You can close this page and relax; we’ll check them once uploaded.</string>
+    <string name="onekyc_upload_inprogress_description_v2">Please wait until it\'s done.</string>
+    <string name="onekyc_upload_inprogress_title">Uploading your documents….</string>
+    <string name="onekyc_userdetails_address">Full address</string>
+    <string name="onekyc_userdetails_confirm">Confirm</string>
+    <string name="onekyc_userdetails_header_description">This data from GoPay will be used for your account activation process.</string>
+    <string name="onekyc_userdetails_header_title">Confirm your e-KTP Details</string>
+    <string name="onekyc_userdetails_help">Not your e-KTP data? Submit yours here</string>
+    <string name="onekyc_userdetails_help_link">here</string>
+    <string name="onekyc_userdetails_name">Name</string>
+    <string name="onekyc_userdetails_nik">NIK</string>
+    <string name="onekyc_userdetails_ojk_description">Your information will remain confidential &amp; only be used for verification.</string>
+    <string name="onekyc_userdetails_ojk_title">Data verification is required by OJK</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_blocking">Take off any object that covered your e-ktp</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_blurry">Looks blurry. Hold your phone steady.</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_card_cropped">Your e-KTP doesn\'t fit in the box yet</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_card_not_detected">Your e-KTP doesn\'t fit in the box yet</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_face_not_detected">Your photo on the e-KTP has to fit in the frame</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_highlight">Too bright. Please adjust your lighting.</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_lowlight">Too dark. Please adjust your lighting.</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_lowlight_highlight">Adjust your lighting so your e-KTP is visible.</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_zoomin">Bring the camera farther so the whole part of e-KTP is visible.</string>
+    <string name="onekyc_zero_clicks_feedback_ktp_zoomout">Bring the camera closer so your e-KTP can fit the frame.</string>
+    <string name="onekyc_zero_clicks_feedback_perfect_autocapture">Capturing… please hold still!</string>
+    <string name="onekyc_zero_clicks_feedback_perfect_manualcapture">Take the picture when you’re ready.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_aurora_flashing">Please hold still</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_aurora_restart">Get ready for the flash, hold still</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_blink_eyes">Try blinking your eyes</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_blurry">Looks blurry. Hold your phone steady.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_cropped">Your face doesn\'t fit in the frame yet.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_eyes_blocking">Please take off glasses</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_eyes_closed">Open your eyes</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_face_blocking">Take off any object that covered your face</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_face_not_detected">Make sure your face is visible</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_face_rotated">Look straight at the camera and fit your face in the frame</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_highlight">Too bright. Please adjust your lighting.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_lowlight">Too dark. Please adjust your lighting.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_lowlight_highlight">Adjust your lighting so your face is visible.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_motion_detected">Please hold still</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_mouth_blink">Try to open and close your mouth quickly</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_mouth_blocked">Take off any object that covered your mouth.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_mouth_open">Close your mouth.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_multiple_face_detected">The verification process can only be done by one person</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_zoomin">Step back so your whole face is visible.</string>
+    <string name="onekyc_zero_clicks_feedback_selfie_zoomout">Step forward so your whole face is visible.</string>
+    <string name="onekyc_zero_clicks_ktp_auto_capture_info">The photo will be taken automatically</string>
+    <string name="onekyc_zero_clicks_ktp_manual_capture_info">Make sure your e-KTP is visible</string>
+    <string name="onekyc_zero_clicks_ktp_title">Fit your e-KTP in the photo area</string>
+    <string name="onekyc_zero_clicks_selfie_auto_capture_info">The photo will be taken automatically</string>
+    <string name="onekyc_zero_clicks_selfie_manual_capture_info">Take the picture when you’re ready</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_help_cta">Get help</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_info1">Enough lighting</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_info2">Put down glasses</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_info3">Don\'t wear hat</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_needtime_cta">Tap here if you need time to get ready</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_ready_cta">Ok, I’m ready now</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_card_title">Please make sure:</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_info_title">Need time to get ready?</string>
+    <string name="onekyc_zero_clicks_selfie_prepare_info_yes">Yes</string>
+    <string name="onekyc_zero_clicks_selfie_title">Fit your face in the photo area</string>
+    <string name="onekyc_zero_clicks_view_guideline">View guidelines</string>
+    <style name="DigitalIdentity"/>
+    <style name="DigitalIdentity.BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="digital_identity_font_thin">@font/digital_identity_font_thin</item>
+        <item name="digital_identity_font_regular">@font/digital_identity_font_regular</item>
+        <item name="digital_identity_font_bold">@font/digital_identity_font_bold</item>
+
+        
+        <item name="digital_identity_body_moderate_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_body_moderate_default_color">?attr/digital_identity_typography_default_body</item>
+        <item name="digital_identity_body_moderate_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_body_moderate_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_body_moderate_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_body_moderate_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_body_moderate_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_body_moderate_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_body_small_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_body_small_default_color">?attr/digital_identity_typography_default_body</item>
+        <item name="digital_identity_body_small_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_body_small_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_body_small_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_body_small_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_body_small_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_body_small_static_green_color">?attr/digital_identity_typography_static_green</item>
+        <item name="digital_identity_body_small_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_caption_moderate_book_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_caption_moderate_book_default_color">?attr/digital_identity_typography_default_caption</item>
+        <item name="digital_identity_caption_moderate_book_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_caption_moderate_book_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_caption_moderate_book_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_caption_moderate_book_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_caption_moderate_book_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_caption_moderate_book_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_caption_moderate_demi_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_caption_moderate_demi_default_color">?attr/digital_identity_typography_default_caption</item>
+        <item name="digital_identity_caption_moderate_demi_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_caption_moderate_demi_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_caption_moderate_demi_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_caption_moderate_demi_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_caption_moderate_demi_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_caption_moderate_demi_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_caption_small_book_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_caption_small_book_default_color">?attr/digital_identity_typography_default_caption</item>
+        <item name="digital_identity_caption_small_book_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_caption_small_book_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_caption_small_book_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_caption_small_book_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_caption_small_book_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_caption_small_book_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_caption_small_demi_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_caption_small_demi_default_color">?attr/digital_identity_typography_default_caption</item>
+        <item name="digital_identity_caption_small_demi_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_caption_small_demi_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_caption_small_demi_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_caption_small_demi_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_caption_small_demi_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_caption_small_demi_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_extra_large_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_extra_large_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_extra_large_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_extra_large_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_extra_large_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_extra_large_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_extra_large_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_extra_large_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_hero_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_hero_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_hero_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_hero_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_hero_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_hero_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_hero_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_hero_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_large_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_large_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_large_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_large_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_large_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_large_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_large_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_large_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_moderate_bold_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_moderate_bold_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_moderate_bold_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_moderate_bold_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_moderate_bold_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_moderate_bold_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_moderate_bold_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_moderate_bold_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_moderate_demi_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_moderate_demi_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_moderate_demi_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_moderate_demi_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_moderate_demi_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_moderate_demi_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_moderate_demi_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_moderate_demi_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_small_bold_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_small_bold_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_small_bold_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_small_bold_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_small_bold_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_small_bold_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_small_bold_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_small_bold_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_small_demi_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_small_demi_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_small_demi_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_small_demi_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_small_demi_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_small_demi_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_small_demi_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_small_demi_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_tiny_bold_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_tiny_bold_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_tiny_bold_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_tiny_bold_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_tiny_bold_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_tiny_bold_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_tiny_bold_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_tiny_bold_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_tiny_demi_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_tiny_demi_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_tiny_demi_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_tiny_demi_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_tiny_demi_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_tiny_demi_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_tiny_demi_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_tiny_demi_static_green_color">?attr/digital_identity_typography_static_green</item>
+        <item name="digital_identity_title_tiny_demi_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_title_hero_extra_active_color">?attr/digital_identity_typography_active</item>
+        <item name="digital_identity_title_hero_extra_default_color">?attr/digital_identity_typography_default_title</item>
+        <item name="digital_identity_title_hero_extra_error_color">?attr/digital_identity_typography_error</item>
+        <item name="digital_identity_title_hero_extra_inactive_color">?attr/digital_identity_typography_inactive</item>
+        <item name="digital_identity_title_hero_extra_inverted_color">?attr/digital_identity_typography_inverted</item>
+        <item name="digital_identity_title_hero_extra_static_black_color">?attr/digital_identity_typography_static_black</item>
+        <item name="digital_identity_title_hero_extra_static_white_color">?attr/digital_identity_typography_static_white</item>
+        <item name="digital_identity_title_hero_extra_warning_color">?attr/digital_identity_typography_warning</item>
+
+        <item name="digital_identity_body_moderate_font_name">?attr/digital_identity_font_thin</item>
+        <item name="digital_identity_body_moderate_font_size">16sp</item>
+        <item name="digital_identity_body_moderate_line_spacing">4sp</item>
+        <item name="digital_identity_body_small_font_name">?attr/digital_identity_font_thin</item>
+        <item name="digital_identity_body_small_font_size">14sp</item>
+        <item name="digital_identity_body_small_line_spacing">6sp</item>
+        <item name="digital_identity_caption_moderate_book_font_name">?attr/digital_identity_font_thin</item>
+        <item name="digital_identity_caption_moderate_book_font_size">13sp</item>
+        <item name="digital_identity_caption_moderate_book_line_spacing">3sp</item>
+        <item name="digital_identity_caption_moderate_demi_font_name">?attr/digital_identity_font_regular</item>
+        <item name="digital_identity_caption_moderate_demi_font_size">13sp</item>
+        <item name="digital_identity_caption_moderate_demi_line_spacing">3sp</item>
+        <item name="digital_identity_caption_small_book_font_name">?attr/digital_identity_font_thin</item>
+        <item name="digital_identity_caption_small_book_font_size">12sp</item>
+        <item name="digital_identity_caption_small_book_line_spacing">4sp</item>
+        <item name="digital_identity_caption_small_demi_font_name">?attr/digital_identity_font_regular</item>
+        <item name="digital_identity_caption_small_demi_font_size">12sp</item>
+        <item name="digital_identity_caption_small_demi_line_spacing">4sp</item>
+        <item name="digital_identity_title_extra_large_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_extra_large_font_size">24sp</item>
+        <item name="digital_identity_title_extra_large_line_spacing">12sp</item>
+        <item name="digital_identity_title_hero_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_hero_font_size">28sp</item>
+        <item name="digital_identity_title_hero_line_spacing">16sp</item>
+        <item name="digital_identity_title_large_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_large_font_size">21sp</item>
+        <item name="digital_identity_title_large_line_spacing">7sp</item>
+        <item name="digital_identity_title_moderate_bold_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_moderate_bold_font_size">18sp</item>
+        <item name="digital_identity_title_moderate_bold_line_spacing">6sp</item>
+        <item name="digital_identity_title_moderate_demi_font_name">?attr/digital_identity_font_regular</item>
+        <item name="digital_identity_title_moderate_demi_font_size">18sp</item>
+        <item name="digital_identity_title_moderate_demi_line_spacing">6sp</item>
+        <item name="digital_identity_title_small_bold_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_small_bold_font_size">16sp</item>
+        <item name="digital_identity_title_small_bold_line_spacing">4sp</item>
+        <item name="digital_identity_title_small_demi_font_name">?attr/digital_identity_font_regular</item>
+        <item name="digital_identity_title_small_demi_font_size">16sp</item>
+        <item name="digital_identity_title_small_demi_line_spacing">4sp</item>
+        <item name="digital_identity_title_tiny_bold_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_tiny_bold_font_size">14sp</item>
+        <item name="digital_identity_title_tiny_bold_line_spacing">6sp</item>
+        <item name="digital_identity_title_tiny_demi_font_name">?attr/digital_identity_font_regular</item>
+        <item name="digital_identity_title_tiny_demi_font_size">14sp</item>
+        <item name="digital_identity_title_tiny_demi_line_spacing">6sp</item>
+        <item name="digital_identity_title_hero_extra_font_name">?attr/digital_identity_font_bold</item>
+        <item name="digital_identity_title_hero_extra_font_size">36sp</item>
+        <item name="digital_identity_title_hero_extra_line_spacing">16sp</item>
+
+        
+        <item category="color" name="digital_identity_border_focus">#1C1D1D</item>
+        <item category="color" name="digital_identity_border_mute_primary">#E8E8E8</item>
+        <item category="color" name="digital_identity_fill_background_primary">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_background_quaternary">#F1F2F4</item>
+        <item category="color" name="digital_identity_fill_background_secondary">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_background_tertiary">#1C1D1D</item>
+        <item category="color" name="digital_identity_fill_mute_primary">#E8E8E8</item>
+        <item category="color" name="digital_identity_fill_mute_secondary">#F7F7F7</item>
+        <item category="color" name="digital_identity_fill_static_black">#1C1D1D</item>
+        <item category="color" name="digital_identity_icon_dynamic_default">#494A4A</item>
+        <item category="color" name="digital_identity_icon_static_white">#FFFFFF</item>
+
+        
+        <item category="spacing" name="digital_identity_spacing_x">4dp</item>
+        <item category="spacing" name="digital_identity_spacing_2x">8dp</item>
+        <item category="spacing" name="digital_identity_spacing_3x">12dp</item>
+        <item category="spacing" name="digital_identity_spacing_4x">16dp</item>
+        <item category="spacing" name="digital_identity_spacing_5x">20dp</item>
+        <item category="spacing" name="digital_identity_spacing_6x">24dp</item>
+        <item category="spacing" name="digital_identity_spacing_8x">32dp</item>
+        <item category="spacing" name="digital_identity_spacing_10x">40dp</item>
+        <item category="spacing" name="digital_identity_spacing_16x">64dp</item>
+
+        
+        <item category="" name="digital_identity_shadow_high_x">0dp</item>
+        <item category="" name="digital_identity_shadow_high_y">0dp</item>
+        <item category="" name="digital_identity_shadow_high_blur">10dp</item>
+        <item category="" name="digital_identity_shadow_high_color">#26000000</item>
+        <item category="" name="digital_identity_shadow_low_x">0dp</item>
+        <item category="" name="digital_identity_shadow_low_y">0dp</item>
+        <item category="" name="digital_identity_shadow_low_blur">4dp</item>
+        <item category="" name="digital_identity_shadow_low_color">#26000000</item>
+
+        <item name="bottomSheetDialogTheme">@style/DigitalIdentityBottomSheetDialog</item>
+    </style>
+    <style name="DigitalIdentity.BaseTheme.Dark" parent="DigitalIdentity.BaseTheme">
+        <item category="color" name="digital_identity_typography_default_body">#BCBDBD</item>
+        <item category="color" name="digital_identity_typography_default_caption">#BCBDBD</item>
+        <item category="color" name="digital_identity_typography_default_title">#FFFFFF</item>
+        <item category="color" name="digital_identity_typography_error">#FF2E4A</item>
+        <item category="color" name="digital_identity_typography_inactive">#757575</item>
+        <item category="color" name="digital_identity_typography_inverted">#0F0F0F</item>
+        <item category="color" name="digital_identity_typography_static_black">#0F0F0F</item>
+        <item category="color" name="digital_identity_typography_static_white">#FFFFFF</item>
+        <item category="color" name="digital_identity_typography_static_green">#00700B</item>
+        <item category="color" name="digital_identity_typography_warning">#FFAB2E</item>
+
+        <item category="color" name="digital_identity_border_inactive">#4A4A4A</item>
+        <item category="color" name="digital_identity_border_static_white">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_error_primary">#EB001F</item>
+        <item category="color" name="digital_identity_fill_inactive_primary">#4A4A4A</item>
+        <item category="color" name="digital_identity_fill_error_secondary">#470000</item>
+        <item category="color" name="digital_identity_fill_inactive_secondary">#292929</item>
+        <item category="color" name="digital_identity_fill_background_primary">#171717</item>
+        <item category="color" name="digital_identity_fill_background_quaternary">#121417</item>
+        <item category="color" name="digital_identity_fill_background_secondary">#212121</item>
+        <item category="color" name="digital_identity_fill_background_tertiary">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_static_white">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_pressed">#1AFFFFFF</item>
+        <item category="color" name="digital_identity_icon_static_black">#0F0F0F</item>
+        <item category="color" name="digital_identity_icon_dynamic_default">#FFFFFF</item>
+
+        <item category="color" name="digital_identity_border_focus">#757575</item>
+        <item category="color" name="digital_identity_border_mute_primary">#383838</item>
+        <item category="color" name="digital_identity_fill_mute_primary">#383838</item>
+        <item category="color" name="digital_identity_fill_mute_secondary">#1C1C1C</item>
+    </style>
+    <style name="DigitalIdentity.BaseTheme.Light" parent="DigitalIdentity.BaseTheme">
+        <item category="color" name="digital_identity_typography_default_body">#494A4A</item>
+        <item category="color" name="digital_identity_typography_default_caption">#494A4A</item>
+        <item category="color" name="digital_identity_typography_default_title">#1C1D1D</item>
+        <item category="color" name="digital_identity_typography_error">#C7001B</item>
+        <item category="color" name="digital_identity_typography_inactive">#757575</item>
+        <item category="color" name="digital_identity_typography_inverted">#FFFFFF</item>
+        <item category="color" name="digital_identity_typography_static_black">#1C1D1D</item>
+        <item category="color" name="digital_identity_typography_static_white">#FFFFFF</item>
+        <item category="color" name="digital_identity_typography_static_green">#00700B</item>
+        <item category="color" name="digital_identity_typography_warning">#A54703</item>
+
+        <item category="color" name="digital_identity_border_error">#EA001F</item>
+        <item category="color" name="digital_identity_border_inactive">#BDBDBD</item>
+        <item category="color" name="digital_identity_border_static_white">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_error_primary">#EA001F</item>
+        <item category="color" name="digital_identity_fill_inactive_primary">#BDBDBD</item>
+        <item category="color" name="digital_identity_fill_error_secondary">#FFF0F0</item>
+        <item category="color" name="digital_identity_fill_inactive_secondary">#F0F0F0</item>
+        <item category="color" name="digital_identity_fill_background_primary">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_background_quaternary">#F1F2F4</item>
+        <item category="color" name="digital_identity_fill_background_secondary">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_background_tertiary">#1C1D1D</item>
+        <item category="color" name="digital_identity_fill_static_white">#FFFFFF</item>
+        <item category="color" name="digital_identity_fill_pressed">#1A000000</item>
+        <item category="color" name="digital_identity_icon_static_black">#1C1D1D</item>
+        <item category="color" name="digital_identity_icon_dynamic_default">#494A4A</item>
+    </style>
+    <style name="DigitalIdentity.BaseTheme.Light.HighContrast" parent="DigitalIdentity.BaseTheme.Light">
+        <item category="color" name="digital_identity_typography_default_body">#353636</item>
+        <item category="color" name="digital_identity_typography_default_caption">#353636</item>
+        <item category="color" name="digital_identity_typography_default_title">#000000</item>
+        <item category="color" name="digital_identity_typography_error">#750010</item>
+        <item category="color" name="digital_identity_typography_static_black">#000000</item>
+        <item category="color" name="digital_identity_typography_warning">#5F2902</item>
+
+        <item category="color" name="digital_identity_border_error">#990014</item>
+        <item category="color" name="digital_identity_border_inactive">#949494</item>
+        <item category="color" name="digital_identity_fill_error_primary">#990014</item>
+        <item category="color" name="digital_identity_fill_inactive_primary">#949494</item>
+        <item category="color" name="digital_identity_fill_error_secondary">#FFE0E0</item>
+        <item category="color" name="digital_identity_fill_pressed">#33000000</item>
+        <item category="color" name="digital_identity_icon_static_black">#000000</item>
+    </style>
+    <style name="DigitalIdentity.Dark.Green" parent="DigitalIdentity.BaseTheme.Dark">
+        <item category="color" name="digital_identity_typography_active">#00990F</item>
+        <item category="color" name="digital_identity_border_active">#008A0E</item>
+        <item category="color" name="digital_identity_fill_active_primary">#008A0E</item>
+        <item category="color" name="digital_identity_fill_active_secondary">#002400</item>
+        <item category="color" name="digital_identity_icon_dynamic_active">#008A0E</item>
+    </style>
+    <style name="DigitalIdentity.Light.Green" parent="DigitalIdentity.BaseTheme.Light">
+        <item category="color" name="digital_identity_typography_active">#00700B</item>
+        <item category="color" name="digital_identity_border_active">#00880D</item>
+        <item category="color" name="digital_identity_fill_active_primary">#00880D</item>
+        <item category="color" name="digital_identity_fill_active_secondary">#E0FFE0</item>
+        <item category="color" name="digital_identity_icon_dynamic_active">#00880D</item>
+    </style>
+    <style name="DigitalIdentity.Light.Green.HighContrast" parent="DigitalIdentity.Light.Green">
+        <item category="color" name="digital_identity_typography_active">#005709</item>
+        <item category="color" name="digital_identity_border_active">#005709</item>
+        <item category="color" name="digital_identity_fill_active_primary">#005709</item>
+        <item category="color" name="digital_identity_fill_active_secondary">#A3FFA3</item>
+        <item category="color" name="digital_identity_icon_dynamic_active">#005709</item>
+    </style>
+    <style name="DigitalIdentity.Light.Purple" parent="DigitalIdentity.BaseTheme.Light">
+        <item category="color" name="digital_identity_typography_active">#8F2E9E</item>
+        <item category="color" name="digital_identity_border_active">#8F2E9E</item>
+        <item category="color" name="digital_identity_fill_active_primary">#8F2E9E</item>
+        <item category="color" name="digital_identity_fill_active_secondary">#FBF2FD</item>
+        <item category="color" name="digital_identity_icon_dynamic_active">#8F2E9E</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateActive">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateDefault">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateError">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateInactive">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateInverted">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodyModerateWarning">
+        <item name="android:fontFamily">?attr/digital_identity_body_moderate_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_moderate_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_moderate_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_moderate_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_moderate_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallActive">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallDefault">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallError">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallInactive">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallInverted">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallStaticGreen">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_static_green_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBodySmallWarning">
+        <item name="android:fontFamily">?attr/digital_identity_body_small_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_body_small_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_body_small_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_body_small_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_body_small_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@drawable/rounded_top</item>
+    <item name="android:paddingTop">@dimen/kyc_sdk_32dp</item>
+  </style>
+    <style name="DigitalIdentityBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/DigitalIdentityBottomSheet</item>
+  </style>
+    <style name="DigitalIdentityCaptionModerateBookActive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookDefault">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookError">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookInactive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookInverted">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateBookWarning">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_book_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiActive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiDefault">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiError">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiInactive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiInverted">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionModerateDemiWarning">
+        <item name="android:fontFamily">?attr/digital_identity_caption_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_moderate_demi_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookActive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookDefault">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookError">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookInactive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookInverted">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallBookWarning">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_book_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_book_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_book_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_book_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_book_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiActive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiDefault">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiError">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiInactive">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiInverted">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityCaptionSmallDemiWarning">
+        <item name="android:fontFamily">?attr/digital_identity_caption_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_caption_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_caption_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_caption_small_demi_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_caption_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeError">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleExtraLargeWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_extra_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_extra_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_extra_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_extra_large_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_extra_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroError">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraError">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroExtraWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_extra_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_extra_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_extra_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_extra_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_extra_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleHeroWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_hero_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_hero_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_hero_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_hero_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_hero_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeError">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleLargeWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_large_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_large_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_large_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_large_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_large_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldError">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateBoldWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_bold_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiError">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleModerateDemiWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_moderate_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_moderate_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_moderate_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_moderate_demi_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_moderate_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldError">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallBoldWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiError">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleSmallDemiWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_demi_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldError">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyBoldWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiActive">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_active_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiDefault">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_default_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiError">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_error_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiInactive">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiInverted">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_inverted_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiStaticBlack">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_static_black_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiStaticGreen">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_static_green_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiStaticWhite">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="DigitalIdentityTitleTinyDemiWarning">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_demi_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_demi_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_demi_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_demi_warning_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_demi_inactive_color</item>
+    </style>
+    <style name="KycPlus.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/kyc_plus_white</item>
+    </style>
+    <style name="KycPlusPrimaryRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_small_bold_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusPrimaryStaticWhiteRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_primary_static_white_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusPrimaryStaticWhiteTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_primary_static_white_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusPrimaryTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">?attr/digital_identity_title_tiny_bold_static_white_color</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusSecondaryDestructiveRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_secondary_destructive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusSecondaryDestructiveTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_secondary_destructive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusSecondaryInvertedRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_secondary_inverted_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusSecondaryInvertedTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_secondary_inverted_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusSecondaryPositiveRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_secondary_positive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusSecondaryPositiveTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_secondary_positive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusTertiaryDestructiveRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_tertiary_destructive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusTertiaryDestructiveTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_tertiary_destructive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusTertiaryPositiveRegular">
+        <item name="android:fontFamily">?attr/digital_identity_title_small_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_small_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_small_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_tertiary_positive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_small_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusTertiaryPositiveTiny">
+        <item name="android:fontFamily">?attr/digital_identity_title_tiny_bold_font_name</item>
+        <item name="android:textSize">?attr/digital_identity_title_tiny_bold_font_size</item>
+        <item name="android:lineSpacingExtra">?attr/digital_identity_title_tiny_bold_line_spacing</item>
+        <item name="android:textColor">@color/kyc_plus_tertiary_positive_button</item>
+        <item name="android:textColorHint">?attr/digital_identity_title_tiny_bold_inactive_color</item>
+    </style>
+    <style name="KycPlusTransparentBaseTheme" parent="DigitalIdentity.Light.Green">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="actionBarTheme">@style/KycPlus.ActionBarTheme</item>
+    </style>
+    <style name="KycPlusTransparentTheme" parent="KycPlusTransparentBaseTheme"/>
+    <style name="KycPlusTransparentWithoutAnimation" parent="KycPlusTransparentTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="KycStepView">
+        <item name="kyc_sv_stepPadding">12dp</item>
+        <item name="kyc_sv_stepLineHeight">5dp</item>
+        <item name="kyc_sv_nextStepLineColor">@color/kyc_plus_next_step</item>
+        <item name="kyc_sv_doneStepLineColor">@color/kyc_plus_done_step</item>
+    </style>
+    <style name="NegativeFeedbackStyle">
+        <item name="android:textColor">@color/kyc_plus_bad_image_quality_feedback</item>
+    </style>
+    <style name="PositiveFeedbackStyle">
+        <item name="android:textColor">@color/kyc_plus_good_image_quality_feedback</item>
+    </style>
+    <style name="StaticWhiteFeedbackStyle">
+        <item name="android:textColor">@color/kyc_plus_white</item>
+    </style>
+    <declare-styleable name="KycPlusButton">
+        <attr format="boolean" name="kyc_plus_loading"/>
+        <attr format="boolean" name="kyc_plus_enabled"/>
+        <attr format="string" name="kyc_plus_text"/>
+        <attr format="enum" name="kyc_plus_btn_type">
+            <enum name="kyc_plus_primary_positive_regular" value="0"/>
+            <enum name="kyc_plus_primary_positive_tiny" value="1"/>
+            <enum name="kyc_plus_primary_positive_full_width" value="2"/>
+            <enum name="kyc_plus_primary_destructive_regular" value="3"/>
+            <enum name="kyc_plus_primary_destructive_tiny" value="4"/>
+            <enum name="kyc_plus_primary_destructive_full_width" value="5"/>
+            <enum name="kyc_plus_secondary_positive_regular" value="6"/>
+            <enum name="kyc_plus_secondary_positive_tiny" value="7"/>
+            <enum name="kyc_plus_secondary_destructive_regular" value="8"/>
+            <enum name="kyc_plus_secondary_destructive_tiny" value="9"/>
+            <enum name="kyc_plus_secondary_static_white_regular" value="10"/>
+            <enum name="kyc_plus_secondary_static_white_tiny" value="11"/>
+            <enum name="kyc_plus_tertiary_positive_regular" value="12"/>
+            <enum name="kyc_plus_tertiary_positive_tiny" value="13"/>
+            <enum name="kyc_plus_tertiary_destructive_regular" value="14"/>
+            <enum name="kyc_plus_tertiary_destructive_tiny" value="15"/>
+            <enum name="kyc_plus_primary_static_white_regular" value="16"/>
+            <enum name="kyc_plus_primary_static_white_tiny" value="17"/>
+            <enum name="kyc_plus_primary_static_white_full_width" value="18"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="KycPlusCircularButton">
+        <attr format="boolean" name="kyc_plus_cb_enabled"/>
+        <attr format="reference" name="kyc_plus_icon_name"/>
+        <attr format="reference" name="kyc_plus_icon_color_tint"/>
+        <attr format="enum" name="kyc_plus_circular_btn_type">
+            <enum name="kyc_plus_circular_primary_large" value="0"/>
+            <enum name="kyc_plus_circular_primary_regular" value="1"/>
+            <enum name="kyc_plus_circular_secondary_regular" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="KycPlusShadowLayout">
+        <attr format="dimension" name="kyc_plus_corner_radius"/>
+        <attr format="enum" name="kyc_plus_sl_type">
+            <enum name="low" value="0"/>
+            <enum name="high" value="1"/>
+        </attr>
+        <attr format="boolean" name="kyc_plus_enable_shadow_left"/>
+        <attr format="boolean" name="kyc_plus_enable_shadow_right"/>
+        <attr format="boolean" name="kyc_plus_enable_shadow_top"/>
+        <attr format="boolean" name="kyc_plus_enable_shadow_bottom"/>
+        <attr format="boolean" name="kyc_plus_force_shadow"/>
+        <attr format="boolean" name="kyc_plus_shadow_enabled"/>
+    </declare-styleable>
+    <declare-styleable name="KycPlusShimmer">
+        <attr format="reference" name="kyc_plus_shimmer_layout"/>
+    </declare-styleable>
+    <declare-styleable name="KycPlusTextView">
+        <attr format="boolean" name="kycPlusSupportFontScaling"/>
+        <attr format="enum" name="kycPlusTypographyStyle">
+            <enum name="kyc_plus_body_moderate_active" value="0"/>
+            <enum name="kyc_plus_body_moderate_default" value="1"/>
+            <enum name="kyc_plus_body_moderate_error" value="2"/>
+            <enum name="kyc_plus_body_moderate_inactive" value="3"/>
+            <enum name="kyc_plus_body_moderate_inverted" value="4"/>
+            <enum name="kyc_plus_body_moderate_static_black" value="5"/>
+            <enum name="kyc_plus_body_moderate_static_white" value="6"/>
+            <enum name="kyc_plus_body_moderate_warning" value="7"/>
+            <enum name="kyc_plus_body_small_active" value="8"/>
+            <enum name="kyc_plus_body_small_default" value="9"/>
+            <enum name="kyc_plus_body_small_error" value="10"/>
+            <enum name="kyc_plus_body_small_inactive" value="11"/>
+            <enum name="kyc_plus_body_small_inverted" value="12"/>
+            <enum name="kyc_plus_body_small_static_black" value="13"/>
+            <enum name="kyc_plus_body_small_static_white" value="14"/>
+            <enum name="kyc_plus_body_small_static_green" value="15"/>
+            <enum name="kyc_plus_body_small_warning" value="16"/>
+            <enum name="kyc_plus_caption_moderate_book_active" value="17"/>
+            <enum name="kyc_plus_caption_moderate_book_default" value="18"/>
+            <enum name="kyc_plus_caption_moderate_book_error" value="19"/>
+            <enum name="kyc_plus_caption_moderate_book_inactive" value="20"/>
+            <enum name="kyc_plus_caption_moderate_book_inverted" value="21"/>
+            <enum name="kyc_plus_caption_moderate_book_static_black" value="22"/>
+            <enum name="kyc_plus_caption_moderate_book_static_white" value="23"/>
+            <enum name="kyc_plus_caption_moderate_book_warning" value="24"/>
+            <enum name="kyc_plus_caption_moderate_demi_active" value="25"/>
+            <enum name="kyc_plus_caption_moderate_demi_default" value="26"/>
+            <enum name="kyc_plus_caption_moderate_demi_error" value="27"/>
+            <enum name="kyc_plus_caption_moderate_demi_inactive" value="28"/>
+            <enum name="kyc_plus_caption_moderate_demi_inverted" value="29"/>
+            <enum name="kyc_plus_caption_moderate_demi_static_black" value="30"/>
+            <enum name="kyc_plus_caption_moderate_demi_static_white" value="31"/>
+            <enum name="kyc_plus_caption_moderate_demi_warning" value="32"/>
+            <enum name="kyc_plus_caption_small_book_active" value="33"/>
+            <enum name="kyc_plus_caption_small_book_default" value="34"/>
+            <enum name="kyc_plus_caption_small_book_error" value="35"/>
+            <enum name="kyc_plus_caption_small_book_inactive" value="36"/>
+            <enum name="kyc_plus_caption_small_book_inverted" value="37"/>
+            <enum name="kyc_plus_caption_small_book_static_black" value="38"/>
+            <enum name="kyc_plus_caption_small_book_static_white" value="39"/>
+            <enum name="kyc_plus_caption_small_book_warning" value="40"/>
+            <enum name="kyc_plus_caption_small_demi_active" value="41"/>
+            <enum name="kyc_plus_caption_small_demi_default" value="42"/>
+            <enum name="kyc_plus_caption_small_demi_error" value="43"/>
+            <enum name="kyc_plus_caption_small_demi_inactive" value="44"/>
+            <enum name="kyc_plus_caption_small_demi_inverted" value="45"/>
+            <enum name="kyc_plus_caption_small_demi_static_black" value="46"/>
+            <enum name="kyc_plus_caption_small_demi_static_white" value="47"/>
+            <enum name="kyc_plus_caption_small_demi_warning" value="48"/>
+            <enum name="kyc_plus_title_extra_large_active" value="49"/>
+            <enum name="kyc_plus_title_extra_large_default" value="50"/>
+            <enum name="kyc_plus_title_extra_large_error" value="51"/>
+            <enum name="kyc_plus_title_extra_large_inactive" value="52"/>
+            <enum name="kyc_plus_title_extra_large_inverted" value="53"/>
+            <enum name="kyc_plus_title_extra_large_static_black" value="54"/>
+            <enum name="kyc_plus_title_extra_large_static_white" value="55"/>
+            <enum name="kyc_plus_title_extra_large_warning" value="56"/>
+            <enum name="kyc_plus_title_hero_active" value="57"/>
+            <enum name="kyc_plus_title_hero_default" value="58"/>
+            <enum name="kyc_plus_title_hero_error" value="59"/>
+            <enum name="kyc_plus_title_hero_inactive" value="60"/>
+            <enum name="kyc_plus_title_hero_inverted" value="61"/>
+            <enum name="kyc_plus_title_hero_static_black" value="62"/>
+            <enum name="kyc_plus_title_hero_static_white" value="63"/>
+            <enum name="kyc_plus_title_hero_warning" value="64"/>
+            <enum name="kyc_plus_title_large_active" value="65"/>
+            <enum name="kyc_plus_title_large_default" value="66"/>
+            <enum name="kyc_plus_title_large_error" value="67"/>
+            <enum name="kyc_plus_title_large_inactive" value="68"/>
+            <enum name="kyc_plus_title_large_inverted" value="69"/>
+            <enum name="kyc_plus_title_large_static_black" value="70"/>
+            <enum name="kyc_plus_title_large_static_white" value="71"/>
+            <enum name="kyc_plus_title_large_warning" value="72"/>
+            <enum name="kyc_plus_title_moderate_bold_active" value="73"/>
+            <enum name="kyc_plus_title_moderate_bold_default" value="74"/>
+            <enum name="kyc_plus_title_moderate_bold_error" value="75"/>
+            <enum name="kyc_plus_title_moderate_bold_inactive" value="76"/>
+            <enum name="kyc_plus_title_moderate_bold_inverted" value="77"/>
+            <enum name="kyc_plus_title_moderate_bold_static_black" value="78"/>
+            <enum name="kyc_plus_title_moderate_bold_static_white" value="79"/>
+            <enum name="kyc_plus_title_moderate_bold_warning" value="80"/>
+            <enum name="kyc_plus_title_moderate_demi_active" value="81"/>
+            <enum name="kyc_plus_title_moderate_demi_default" value="82"/>
+            <enum name="kyc_plus_title_moderate_demi_error" value="83"/>
+            <enum name="kyc_plus_title_moderate_demi_inactive" value="84"/>
+            <enum name="kyc_plus_title_moderate_demi_inverted" value="85"/>
+            <enum name="kyc_plus_title_moderate_demi_static_black" value="86"/>
+            <enum name="kyc_plus_title_moderate_demi_static_white" value="87"/>
+            <enum name="kyc_plus_title_moderate_demi_warning" value="88"/>
+            <enum name="kyc_plus_title_small_bold_active" value="89"/>
+            <enum name="kyc_plus_title_small_bold_default" value="90"/>
+            <enum name="kyc_plus_title_small_bold_error" value="91"/>
+            <enum name="kyc_plus_title_small_bold_inactive" value="92"/>
+            <enum name="kyc_plus_title_small_bold_inverted" value="93"/>
+            <enum name="kyc_plus_title_small_bold_static_black" value="94"/>
+            <enum name="kyc_plus_title_small_bold_static_white" value="95"/>
+            <enum name="kyc_plus_title_small_bold_warning" value="96"/>
+            <enum name="kyc_plus_title_small_demi_active" value="97"/>
+            <enum name="kyc_plus_title_small_demi_default" value="98"/>
+            <enum name="kyc_plus_title_small_demi_error" value="99"/>
+            <enum name="kyc_plus_title_small_demi_inactive" value="100"/>
+            <enum name="kyc_plus_title_small_demi_inverted" value="101"/>
+            <enum name="kyc_plus_title_small_demi_static_black" value="102"/>
+            <enum name="kyc_plus_title_small_demi_static_white" value="103"/>
+            <enum name="kyc_plus_title_small_demi_warning" value="104"/>
+            <enum name="kyc_plus_title_tiny_bold_active" value="105"/>
+            <enum name="kyc_plus_title_tiny_bold_default" value="106"/>
+            <enum name="kyc_plus_title_tiny_bold_error" value="107"/>
+            <enum name="kyc_plus_title_tiny_bold_inactive" value="108"/>
+            <enum name="kyc_plus_title_tiny_bold_inverted" value="109"/>
+            <enum name="kyc_plus_title_tiny_bold_static_black" value="110"/>
+            <enum name="kyc_plus_title_tiny_bold_static_white" value="111"/>
+            <enum name="kyc_plus_title_tiny_bold_warning" value="112"/>
+            <enum name="kyc_plus_title_tiny_demi_active" value="113"/>
+            <enum name="kyc_plus_title_tiny_demi_default" value="114"/>
+            <enum name="kyc_plus_title_tiny_demi_error" value="115"/>
+            <enum name="kyc_plus_title_tiny_demi_inactive" value="116"/>
+            <enum name="kyc_plus_title_tiny_demi_inverted" value="117"/>
+            <enum name="kyc_plus_title_tiny_demi_static_black" value="118"/>
+            <enum name="kyc_plus_title_tiny_demi_static_white" value="119"/>
+            <enum name="kyc_plus_title_tiny_demi_static_green" value="120"/>
+            <enum name="kyc_plus_title_tiny_demi_warning" value="121"/>
+            <enum name="kyc_plus_title_hero_extra_active" value="122"/>
+            <enum name="kyc_plus_title_hero_extra_default" value="123"/>
+            <enum name="kyc_plus_title_hero_extra_error" value="124"/>
+            <enum name="kyc_plus_title_hero_extra_inactive" value="125"/>
+            <enum name="kyc_plus_title_hero_extra_inverted" value="126"/>
+            <enum name="kyc_plus_title_hero_extra_static_black" value="127"/>
+            <enum name="kyc_plus_title_hero_extra_static_white" value="128"/>
+            <enum name="kyc_plus_title_hero_extra_warning" value="129"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="KycStepView">
+        <attr format="dimension" name="kyc_sv_stepPadding"/>
+        <attr format="color" name="kyc_sv_doneStepLineColor"/>
+        <attr format="color" name="kyc_sv_nextStepLineColor"/>
+        <attr format="dimension" name="kyc_sv_stepLineHeight"/>
+        <attr format="integer" name="kyc_sv_stepsNumber"/>
+        <attr format="color" name="kyc_sv_background"/>
+    </declare-styleable>
+</resources>

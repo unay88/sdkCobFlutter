@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:background="?attr/digital_identity_fill_active_primary"
+    tools:layout_width="match_parent"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <LinearLayout
+        android:id="@+id/ll_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        tools:ignore="UseCompoundDrawables"
+        tools:layout_marginBottom="?attr/digital_identity_spacing_3x"
+        tools:layout_marginTop="?attr/digital_identity_spacing_3x"
+        tools:layout_width="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_left"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="?attr/digital_identity_spacing_2x"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:paddingTop="0.5dp"
+            android:paddingBottom="0.5dp"
+            android:lines="1"
+            android:textAlignment="center"
+            app:kycPlusTypographyStyle="kyc_plus_title_small_bold_static_white"
+            tools:text="Order Now" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_right"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="?attr/digital_identity_spacing_2x"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</merge>

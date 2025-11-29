@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:background="@color/kyc_plus_white"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="@dimen/kyc_sdk_18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/kyc_sdk_40dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/iv_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:kycPlusTypographyStyle="kyc_plus_title_extra_large_default"
+        tools:text="Verifying your face, please stay on this page" />
+
+    <!-- Image loads here -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:layout_marginHorizontal="@dimen/kyc_sdk_40dp"
+        android:layout_marginVertical="@dimen/kyc_sdk_32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="@dimen/kyc_sdk_0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:layout_constraintDimensionRatio="4:3" />
+
+    <!-- Timer circular background -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_timer_background"
+        android:layout_width="@dimen/kyc_sdk_100dp"
+        android:layout_height="@dimen/kyc_sdk_100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_image"
+        app:layout_constraintStart_toStartOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image"
+        tools:background="@drawable/onekyc_timer_background" />
+
+    <!-- Timer infinite loader -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_timer_loader"
+        android:layout_width="@dimen/kyc_sdk_40dp"
+        android:layout_height="@dimen/kyc_sdk_40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_image"
+        app:layout_constraintStart_toStartOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image"
+        tools:srcCompat="@drawable/kyc_plus_ic_label_16_loading" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:kycPlusTypographyStyle="kyc_plus_title_hero_extra_static_black"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_image"
+        app:layout_constraintStart_toStartOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image"
+        tools:text="1" />
+
+    <!-- Success animation -->
+    <com.iab.digitalidentity.ui.commonviews.CheckmarkAnimationView
+        android:id="@+id/av_success_checkmark"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:elevation="@dimen/kyc_sdk_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_image"
+        app:layout_constraintStart_toStartOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="@id/iv_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

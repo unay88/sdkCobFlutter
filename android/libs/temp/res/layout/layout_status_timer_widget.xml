@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/kyc_sdk_4dp"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/shape_circle_white"
+    android:elevation="@dimen/kyc_sdk_2dp"
+    android:outlineSpotShadowColor="@color/kyc_plus_black_80"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:padding="@dimen/kyc_sdk_6dp"
+        app:indicatorColor="@color/kyc_plus_done_step"
+        app:indicatorDirectionCircular="counterclockwise"
+        app:indicatorInset="@dimen/kyc_sdk_0dp"
+        app:indicatorSize="@dimen/kyc_sdk_100dp"
+        app:trackColor="@color/kyc_plus_next_step"
+        app:trackCornerRadius="@dimen/kyc_sdk_16dp"
+        app:trackThickness="@dimen/kyc_sdk_6dp"
+        tools:progress="20" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_timer_icon"
+        android:layout_width="@dimen/kyc_sdk_64dp"
+        android:layout_height="@dimen/kyc_sdk_64dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:srcCompat="@drawable/one_kyc_ic_face_verification_failed"
+        tools:visibility="visible" />
+
+    <com.iab.digitalidentity.ui.commonviews.CheckmarkAnimationView
+        android:id="@+id/av_success_checkmark"
+        android:layout_width="@dimen/kyc_sdk_64dp"
+        android:layout_height="@dimen/kyc_sdk_64dp"
+        android:layout_gravity="center"
+        android:scaleX="1.7"
+        android:scaleY="1.7" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_timer_text"
+        android:layout_width="@dimen/kyc_sdk_84dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        app:autoSizeTextType="uniform"
+        app:kycPlusTypographyStyle="kyc_plus_title_hero_extra_default"
+        tools:text="1234567890" />
+</FrameLayout>

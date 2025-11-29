@@ -1,0 +1,54 @@
+{
+  "variant_name": "Zero click Aurora",
+  "is_debug_mode_enabled": false,
+  "ed_window": 5,
+  "release_kyc_dvn_experiment_v4": "treatment_2",
+  "image_quality": {
+    "ktp_configs": {
+      "max_blur_value_threshold": 0.46,
+      "max_highlight_threshold": 0.5,
+      "max_lowlight_threshold": 0.46,
+      "file_resolution_v2": 160,
+      "zoom_range": [
+        145,
+        195
+      ],
+      "zoom_range_dvn": [
+        103,
+        150
+      ]
+    },
+    "selfie_configs": {
+      "max_blur_value_threshold": 30,
+      "max_highlight_threshold": 90,
+      "max_lowlight_threshold": 80,
+      "file_resolution_v2": 96,
+      "zoom_range": [
+        40,
+        65
+      ]
+    }
+  },
+  "zero_click": {
+    "selfie_prepare_timer": 5000,
+    "bestframe_capture_preview_disabled": true,
+    "selfie_prepare_option": "2"
+  },
+  "image_configs": {
+    "compression": {
+      "max_size_in_kb": 10240,
+      "quality": 50
+    }
+  },
+  "data_capture": {
+    "frame_rate": 10,
+    "debug_logs_app": true,
+    "debug_logs_ojo": true,
+    "frame_retry": 3
+  },
+  "best_frame": {
+    "quality": 100,
+    "debug": false,
+    "retry": 2
+  }
+}

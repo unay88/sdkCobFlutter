@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_supervision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_data_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_supervision"
+            android:layout_width="@dimen/kyc_sdk_24dp"
+            android:layout_height="@dimen/kyc_sdk_24dp"
+            app:srcCompat="@drawable/kyc_plus_spot_secure" />
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/tv_supervision"
+            android:layout_width="@dimen/kyc_sdk_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/kyc_sdk_8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/gofin_kyc_upload_bank_monitored_title"
+            app:kycPlusTypographyStyle="kyc_plus_caption_small_demi_active" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/kyc_sdk_4dp"
+            android:tint="?attr/digital_identity_fill_active_primary"
+            app:srcCompat="@drawable/kyc_plus_ic_next" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

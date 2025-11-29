@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iab.digitalidentity" >
+
+    <uses-sdk android:minSdkVersion="21" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        tools:ignore="DiscouragedApi,UnusedAttribute" >
+        <activity
+            android:name="com.iab.digitalidentity.sdk.identityverification.IdentityVerificationActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.slikform.OneKycSlikFormActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.navigation.OneKycNavigatorActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/KycPlusTransparentWithoutAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.identityscan.OneKycIdentityScanActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.identityscan.OneKycVerificationFailureActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.onboarding.KycSdkOnboardingActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.customcamera.PassportCameraActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.customcamera.ZeroClickCameraActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.customcamera.FRCameraActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.legacy.OneKycPassportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.webclient.KycPlusWebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.reviewdocuments.KycPlusReviewDocumentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.reviewdocuments.KycPlusDetailedPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.uploading.KycPlusUploadBarActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.launcher.KycPlusSdkHomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.landingPage.OneKycLandingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/KycPlusTransparentWithoutAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.challenge.OneKycChallengeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.consent.OneKycConsentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.challenge.confirmation.OneKycIDConfirmationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.iab.digitalidentity.sdk.edd.OneKycDueDiligenceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/DigitalIdentity.Light.Green"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+    </application>
+
+</manifest>

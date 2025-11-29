@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/digital_identity_fill_background_secondary"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/kyc_sdk_16dp"
+    android:paddingBottom="@dimen/kyc_sdk_32dp"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_models_download_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/onekyc_models_download_loader_title"
+        app:kycPlusTypographyStyle="kyc_plus_title_tiny_bold_default" />
+
+    <ProgressBar
+        android:id="@+id/pb_models_download_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kyc_sdk_4dp"
+        android:layout_marginTop="@dimen/kyc_sdk_16dp"
+        android:max="100"
+        android:progressDrawable="@drawable/kyc_plus_rounded_progress_green_bg"
+        android:progressTint="?attr/digital_identity_fill_active_primary"
+        tools:progress="40" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_models_download_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kyc_sdk_16dp"
+        android:text="@string/onekyc_models_download_loader_description"
+        app:kycPlusTypographyStyle="kyc_plus_body_moderate_default" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kyc_plus_white"
+    android:orientation="vertical"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <FrameLayout
+        android:id="@+id/fl_dummy_fr"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="667dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintWidth_max="375dp">
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="547dp"
+            android:layout_gravity="center"
+            android:background="@color/kyc_plus_black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/kyc_plus_aurora_background" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_contour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/kyc_plus_aurora_contour" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_dotted_contour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/kyc_plus_aurora_dotted_contour" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/kyc_plus_aurora_overlay" />
+    </FrameLayout>
+
+    <com.iab.digitalidentity.ui.commonviews.OneKycOnboardingView
+        android:id="@+id/one_kyc_onboarding_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.iab.digitalidentity.ui.commonviews.OneKycVerificationView
+        android:id="@+id/one_kyc_verification_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

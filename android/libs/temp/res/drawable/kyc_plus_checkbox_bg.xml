@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:targetApi="lollipop">
+    <item android:id="@+id/pressed" android:drawable="@drawable/kyc_plus_checkbox_pressed_state" android:state_pressed="true"/>
+    <item android:id="@+id/checked" android:drawable="@drawable/kyc_plus_checkbox_active" android:state_checked="true"/>
+    <item android:id="@+id/unchecked" android:drawable="@drawable/kyc_plus_checkbox_inactive"/>
+    <transition android:drawable="@drawable/kyc_plus_checkbox_avd_check" android:fromId="@id/pressed" android:toId="@id/checked"/>
+</animated-selector>

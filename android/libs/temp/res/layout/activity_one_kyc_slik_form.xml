@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/digital_identity_fill_background_primary"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/slik_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:contentInsetStartWithNavigation="@dimen/kyc_sdk_0dp"
+        app:subtitleTextAppearance="@style/DigitalIdentityBodySmallInactive"
+        app:titleTextAppearance="@style/DigitalIdentityTitleSmallBoldDefault"
+        tools:navigationIcon="@drawable/kyc_plus_ic_navigation_24_back"
+        tools:subtitle="Step 3/3"
+        tools:title="@string/gopay_savings_slik_form_navigation_title"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.iab.digitalidentity.ui.commonviews.KycStepView
+            android:id="@+id/stepper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/kyc_sdk_48dp"
+            android:paddingTop="@dimen/kyc_sdk_4dp"
+            android:paddingEnd="@dimen/kyc_sdk_28dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <com.iab.digitalidentity.ui.shimmer.KycPlusShimmer
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:kyc_plus_shimmer_layout="@layout/layout_one_kyc_slik_shimmer" />
+
+    <include
+        android:id="@+id/include_layout"
+        layout="@layout/layout_one_kyc_slik_questions" />
+
+    <com.iab.digitalidentity.ui.commonviews.KycSdkFullScreenLoader
+        android:id="@+id/loaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

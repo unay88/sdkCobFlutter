@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kyc_plus_black"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <!-- Navigation bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kycPlusTypographyStyle="kyc_plus_title_moderate_bold_static_white"
+            tools:text="KTP Photo" />
+
+        <Button
+            android:id="@+id/btn_debug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Debug"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Top info text -->
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/kyc_sdk_16dp"
+        android:layout_marginTop="@dimen/kyc_sdk_8dp"
+        android:text="You must face straight towards the camera without glasses and hats, similar to your"
+        app:kycPlusTypographyStyle="kyc_plus_body_small_static_white"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/image_quality_feedback_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <!-- Camera preview area -->
+    <FrameLayout
+        android:id="@+id/cameraFramePreviewView"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:layout_marginTop="?attr/digital_identity_spacing_x"
+        android:background="@android:color/transparent"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription" />
+
+    <!-- overlay view for selfie-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/selfieMaskOverlayView"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:contentDescription="@string/kyc_sdk_take_id_photo"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/cameraFramePreviewView"
+        app:layout_constraintEnd_toEndOf="@id/cameraFramePreviewView"
+        app:layout_constraintStart_toStartOf="@id/cameraFramePreviewView"
+        app:layout_constraintTop_toTopOf="@id/cameraFramePreviewView"
+        app:srcCompat="@drawable/ic_kyc_default_selfie_ektp_overlay"
+        tools:visibility="visible" />
+
+    <!-- Shutter button -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonCapture"
+        android:layout_width="@dimen/kyc_sdk_56dp"
+        android:layout_height="@dimen/kyc_sdk_56dp"
+        android:layout_marginBottom="?attr/digital_identity_spacing_4x"
+        android:contentDescription="@string/kyc_sdk_take_id_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/go_pay_camera_capture_background" />
+
+    <!-- Debug view -->
+    <FrameLayout
+        android:id="@+id/debugView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/kyc_plus_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

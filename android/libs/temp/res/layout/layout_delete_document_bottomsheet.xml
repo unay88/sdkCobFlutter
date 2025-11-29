@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/digital_identity_fill_background_secondary"
+    android:padding="?attr/digital_identity_spacing_4x"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:kycPlusTypographyStyle="kyc_plus_title_large_default" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/digital_identity_spacing_x"
+        android:layout_marginBottom="?attr/digital_identity_spacing_4x"
+        android:text="@string/gofin_kyc_single_document_delete_bottom_sheet_subtitle"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:kycPlusTypographyStyle="kyc_plus_body_moderate_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.iab.digitalidentity.ui.button.KycPlusButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="?attr/digital_identity_spacing_2x"
+            android:layout_weight="1"
+            app:kyc_plus_btn_type="kyc_plus_secondary_positive_regular"
+            app:kyc_plus_enabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:kyc_plus_text="@string/gofin_kyc_delete_document_confirmation_cancel_cta" />
+
+        <com.iab.digitalidentity.ui.button.KycPlusButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?attr/digital_identity_spacing_2x"
+            android:layout_weight="1"
+            app:kyc_plus_btn_type="kyc_plus_primary_positive_regular"
+            app:kyc_plus_enabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:kyc_plus_text="@string/gofin_kyc_delete_document_confirmation_yes_cta" />
+
+    </LinearLayout>
+
+</LinearLayout>

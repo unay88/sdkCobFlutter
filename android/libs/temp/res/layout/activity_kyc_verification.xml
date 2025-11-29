@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sdk.identityverification.IdentityVerificationActivity">
+
+    <com.iab.digitalidentity.ui.commonviews.OneKycOnboardingView
+        android:id="@+id/onboarding_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.iab.digitalidentity.ui.commonviews.DocumentUploadView
+        android:id="@+id/document_upload_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/one_kyc_bg_white_rounded"
+        android:padding="@dimen/kyc_sdk_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/kyc_sdk_72dp"
+            android:layout_height="@dimen/kyc_sdk_72dp"
+            android:indeterminateTint="?attr/digital_identity_fill_active_primary" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

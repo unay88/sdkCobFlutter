@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/kyc_plus_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/kyc_sdk_16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/kyc_plus_default_common_spot_hero_no_internet_connection"
+        tools:ignore="ContentDescription" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/empty_error_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/one_kyc_widget_error_no_connection_title"
+        app:kycPlusTypographyStyle="kyc_plus_title_hero_default" />
+
+    <com.iab.digitalidentity.ui.text.KycPlusTextView
+        android:id="@+id/empty_error_desc_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/kyc_sdk_16dp"
+        android:gravity="center"
+        android:text="@string/one_kyc_widget_error_no_connection_description"
+        app:kycPlusTypographyStyle="kyc_plus_body_moderate_default" />
+</LinearLayout>

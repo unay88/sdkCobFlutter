@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/kyc_sdk_4dp"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <View
+        android:id="@+id/barrier"
+        android:layout_width="@dimen/kyc_sdk_1dp"
+        android:layout_height="@dimen/kyc_sdk_1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circular_timer"
+        app:layout_constraintEnd_toEndOf="@+id/circular_timer"
+        app:layout_constraintStart_toStartOf="@+id/circular_timer"
+        app:layout_constraintTop_toTopOf="@+id/circular_timer"
+        app:layout_constraintVertical_bias="0.80" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/kyc_sdk_4dp"
+        app:cardBackgroundColor="@color/kyc_plus_white"
+        app:cardCornerRadius="@dimen/kyc_sdk_20dp"
+        app:cardElevation="@dimen/kyc_sdk_2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/kyc_sdk_16dp"
+            android:paddingTop="@dimen/kyc_sdk_32dp"
+            android:paddingBottom="@dimen/kyc_sdk_24dp">
+
+            <com.iab.digitalidentity.ui.text.KycPlusTextView
+                android:id="@+id/text_title"
+                android:layout_width="@dimen/kyc_sdk_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/kyc_sdk_12dp"
+                android:textAlignment="center"
+                app:kycPlusTypographyStyle="kyc_plus_title_moderate_demi_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Reviewing your documents took longer than two line" />
+
+            <com.iab.digitalidentity.ui.text.KycPlusTextView
+                android:id="@+id/text_description"
+                android:layout_width="@dimen/kyc_sdk_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/kyc_sdk_12dp"
+                android:layout_marginTop="@dimen/kyc_sdk_8dp"
+                android:textAlignment="center"
+                app:kycPlusTypographyStyle="kyc_plus_caption_small_book_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_title"
+                tools:text="We’re experiencing more traffic than usual. Please wait max 24 hours." />
+
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/kyc_sdk_8dp"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/kyc_sdk_4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_description"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/kyc_sdk_16dp"
+                    android:layout_height="@dimen/kyc_sdk_16dp"
+                    app:srcCompat="@drawable/kyc_plus_ic_action_16_info"
+                    app:tint="@color/kyc_plus_green" />
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/kyc_sdk_4dp"
+                    android:text="@string/onekyc_fr_status_guideline"
+                    app:kycPlusTypographyStyle="kyc_plus_caption_small_demi_active" />
+            </LinearLayout>
+
+            <com.iab.digitalidentity.ui.button.KycPlusButton
+                android:id="@+id/btn_cta"
+                android:layout_width="@dimen/kyc_sdk_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/kyc_sdk_16dp"
+                app:kyc_plus_btn_type="kyc_plus_primary_positive_regular"
+                app:kyc_plus_text="Contact for help"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_info" />
+
+            <View
+                android:id="@+id/viewBtn"
+                android:layout_width="@dimen/kyc_sdk_0dp"
+                android:layout_height="@dimen/kyc_sdk_0dp"
+                android:alpha=".8"
+                android:background="@color/kyc_plus_color_primary"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/btn_cta"
+                app:layout_constraintEnd_toEndOf="@id/btn_cta"
+                app:layout_constraintStart_toStartOf="@id/btn_cta"
+                app:layout_constraintTop_toTopOf="@id/btn_cta"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.iab.digitalidentity.ui.commonviews.KycCircularTimerView
+        android:id="@+id/circular_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/kyc_sdk_2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

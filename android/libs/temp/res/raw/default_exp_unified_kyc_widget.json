@@ -1,0 +1,13 @@
+{
+  "variant_name": "widget_enabled",
+  "is_enabled": "true",
+  "inprogress": {
+    "window1_poll": 5000,
+    "window2_poll": 300000,
+    "verification_time_seconds": 40,
+    "window2_verification_time_text": {
+      "id": "maksimal 24 jam",
+      "en": "Max 24 Hours"
+    }
+  }
+}

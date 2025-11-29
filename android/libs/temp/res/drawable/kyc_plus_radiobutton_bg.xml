@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/radio_selector" tools:targetApi="lollipop">
+    <item android:id="@+id/pressed" android:drawable="@drawable/kyc_plus_radiobutton_pressed_state" android:state_pressed="true"/>
+    <item android:id="@+id/selected" android:drawable="@drawable/kyc_plus_radiobutton_active" android:state_checked="true"/>
+    <item android:id="@+id/unselected" android:drawable="@drawable/kyc_plus_radiobutton_inactive"/>
+    <transition android:drawable="@drawable/kyc_plus_radiobutton_avd_bg" android:fromId="@id/pressed" android:toId="@id/selected"/>
+</animated-selector>

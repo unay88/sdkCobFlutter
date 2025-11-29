@@ -1,0 +1,52 @@
+{
+  "questions": {
+    "en": [
+      {
+        "category": "source_of_funds",
+        "title": "Source of income",
+        "answers": [
+          "Business",
+          "Salary",
+          "Pension fund",
+          "Spouse",
+          "Inheritance"
+        ]
+      },
+      {
+        "category": "purpose_of_upgrade",
+        "title": "Purpose of upgrading account",
+        "answers": [
+          "Purchase of merchandise and services",
+          "Bill payment",
+          "Get higher balance limit",
+          "Transfer money",
+          "Donation"
+        ]
+      }
+    ],
+    "id": [
+      {
+        "category": "source_of_funds",
+        "title": "Sumber pendapatan",
+        "answers": [
+          "Hasil usaha",
+          "Gaji",
+          "Dana pensiun",
+          "Pasangan",
+          "Warisan"
+        ]
+      },
+      {
+        "category": "purpose_of_upgrade",
+        "title": "Tujuan melakukan upgrade akun",
+        "answers": [
+          "Pembayaran transaksi belanja dan jasa",
+          "Pembayaran tagihan",
+          "Meningkatkan limit saldo",
+          "Transfer dana",
+          "Donasi"
+        ]
+      }
+    ]
+  }
+}

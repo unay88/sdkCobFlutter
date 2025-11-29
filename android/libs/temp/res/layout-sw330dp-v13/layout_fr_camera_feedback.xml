@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iab.digitalidentity.ui.text.KycPlusTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:ellipsize="end"
+    android:gravity="center_horizontal"
+    android:maxLines="2"
+    android:paddingHorizontal="@dimen/kyc_sdk_8dp"
+    app:kycPlusTypographyStyle="kyc_plus_title_tiny_bold_static_black"
+    tools:text="@string/onekyc_zero_clicks_selfie_title"
+    tools:theme="@style/DigitalIdentity.Light.Green" />

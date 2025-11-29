@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/step_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/digital_identity_spacing_2x"
+        app:srcCompat="@drawable/kyc_plus_spot_ktp"
+        app:layout_constraintBottom_toBottomOf="@+id/details_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/details_container" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/step_icon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/text_status_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?attr/digital_identity_spacing_4x"
+            android:gravity="start"
+            android:text="@string/jago_one_kyc_widget_verification_kyc"
+            app:layout_constraintBottom_toTopOf="@+id/text_status_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:kycPlusTypographyStyle="kyc_plus_title_tiny_demi_default"
+            tools:text="The estimated finish time is 5 minutes. Click help if you need assistance. The estimated finish time is 5 minutes. Click help if you need assistance.The estimated finish time is 5 minutes. " />
+
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/text_status_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?attr/digital_identity_spacing_4x"
+            android:gravity="start"
+            android:text="@string/jago_one_kyc_widget_verification_estimation_traffic"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_status_title"
+            app:kycPlusTypographyStyle="kyc_plus_caption_small_book_default"
+            tools:text="The estimated finish time is 5 minutes. Click help if you need assistance. The estimated finish time is 5 minutes. Click help if you need assistance.The estimated finish time is 5 minutes. Click help if you need assistance."
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

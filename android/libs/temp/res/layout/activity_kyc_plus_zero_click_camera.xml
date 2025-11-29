@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kyc_plus_black"
+    tools:theme="@style/DigitalIdentity.Light.Green">
+
+    <RelativeLayout
+        android:id="@+id/selfieCameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selfieCameraLoc"
+                android:layout_width="match_parent"
+                android:layout_height="547dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/selfieCameraSize"
+                    android:layout_width="240dp"
+                    android:layout_height="320dp"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/selfieCameraPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selfieMaskLayout"
+                android:layout_width="375dp"
+                android:layout_height="667dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_background" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraContour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_contour" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraDottedContour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_dotted_contour" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/auroraOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/kyc_plus_aurora_overlay" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:animateLayoutChanges="true"
+        android:animationCache="false"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.iab.digitalidentity.ui.button.KycPlusButton
+            android:id="@+id/btnDebug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+            android:visibility="gone"
+            app:kyc_plus_btn_type="kyc_plus_primary_static_white_tiny"
+            app:kyc_plus_text="Debug"
+            tools:visibility="visible" />
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:id="@+id/tvGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/kyc_sdk_16dp"
+            android:padding="@dimen/kyc_sdk_6dp"
+            android:drawablePadding="@dimen/kyc_sdk_4dp"
+            tools:text="@string/onekyc_zero_clicks_view_guideline"
+            app:kycPlusTypographyStyle="kyc_plus_title_tiny_demi_active"
+            app:kyc_plus_btn_type="kyc_plus_secondary_static_white_regular" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- stepper container -->
+    <FrameLayout
+        android:id="@+id/flSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:animationCache="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <com.iab.digitalidentity.ui.commonviews.KycStepView
+            android:id="@+id/svSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/kyc_sdk_16dp"
+            android:paddingVertical="@dimen/kyc_sdk_4dp"
+            app:kyc_sv_doneStepLineColor="#00880D"
+            app:kyc_sv_nextStepLineColor="#3DFFFFFF"
+            app:kyc_sv_stepsNumber="2" />
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:layout_marginTop="@dimen/kyc_sdk_4dp"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flSteps"
+        app:layout_constraintVertical_bias="0">
+
+        <!-- camera preview area -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ktpCameraContainer"
+            android:layout_width="@dimen/kyc_sdk_0dp"
+            android:layout_height="@dimen/kyc_sdk_0dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/kyc_sdk_16dp"
+            app:cardElevation="@dimen/kyc_sdk_0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/ktpCameraPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.iab.digitalidentity.ui.commonviews.KycSdkCameraMaskView
+                    android:id="@+id/cmvKtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewFullMask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:background="@color/kyc_plus_black"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivKtpOnboarding"
+            android:layout_width="@dimen/kyc_sdk_0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/kyc_sdk_take_id_photo"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ktpCameraContainer"
+            app:layout_constraintEnd_toEndOf="@id/ktpCameraContainer"
+            app:layout_constraintStart_toStartOf="@id/ktpCameraContainer"
+            app:layout_constraintTop_toTopOf="@id/ktpCameraContainer"
+            app:srcCompat="@drawable/ic_kyc_ktp_overlay_onboarding_view"
+            tools:visibility="visible" />
+
+        <com.iab.digitalidentity.sdk.customcamera.KycImageQualityFeedbackViewV2
+            android:id="@+id/ktpImageQualityFeedbackView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/kyc_sdk_16dp"
+            android:layout_marginBottom="@dimen/kyc_sdk_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/selfieImageQualityFeedbackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <RelativeLayout
+            android:id="@+id/feedbackLocation"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <com.iab.digitalidentity.sdk.customcamera.KycImageQualityFeedbackViewV2
+                android:id="@+id/selfieImageQualityFeedbackView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/kyc_sdk_24dp"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llReady"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/kyc_sdk_16dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_24dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/rounded_grey_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/kyc_sdk_16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <com.iab.digitalidentity.ui.text.KycPlusTextView
+            android:layout_width="@dimen/kyc_sdk_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/onekyc_zero_clicks_selfie_prepare_info_title"
+            app:kycPlusTypographyStyle="kyc_plus_title_tiny_demi_default"
+            tools:ignore="InefficientWeight" />
+
+        <com.iab.digitalidentity.ui.button.KycPlusButton
+            android:id="@+id/btnReadyPrepare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/kyc_sdk_10dp"
+            app:kyc_plus_btn_type="kyc_plus_primary_positive_tiny"
+            app:kyc_plus_text="@string/onekyc_zero_clicks_selfie_prepare_info_yes" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivReadyClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/kyc_sdk_4dp"
+            android:tint="?attr/digital_identity_icon_dynamic_default"
+            app:srcCompat="@drawable/kyc_plus_ic_navigation_24_cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tvTitleLocationBottom"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/tvTitleLocationTop"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical">
+
+                <com.iab.digitalidentity.ui.text.KycPlusTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:kycPlusTypographyStyle="kyc_plus_title_moderate_bold_static_white"
+                    tools:text="@string/onekyc_zero_clicks_selfie_title"
+                    tools:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCapture"
+        android:layout_width="@dimen/kyc_sdk_72dp"
+        android:layout_height="@dimen/kyc_sdk_72dp"
+        android:layout_marginBottom="@dimen/kyc_sdk_32dp"
+        android:contentDescription="@string/kyc_sdk_take_id_photo"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/go_pay_camera_capture_background"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/fullScreenLoaderWhite"
+        android:layout_width="@dimen/kyc_sdk_0dp"
+        android:layout_height="@dimen/kyc_sdk_0dp"
+        android:alpha="0.0"
+        android:background="#CCFFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/debugView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/kyc_plus_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
