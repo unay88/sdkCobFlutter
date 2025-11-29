@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+import sdkCob
 
 public class BjbCobSdkPlugin: NSObject, FlutterPlugin {
   private var pendingResult: FlutterResult?
@@ -33,8 +34,9 @@ public class BjbCobSdkPlugin: NSObject, FlutterPlugin {
     
     pendingResult = result
     
-    DispatchQueue.main.async {
-      guard let rootViewController = self.getRootViewController() else {
+    DispatchQueue.main.async { [weak self] in
+      guard let self = self,
+            let rootViewController = self.getRootViewController() else {
         result(FlutterError(code: "NO_ACTIVITY", message: "Cannot find root view controller", details: nil))
         return
       }
@@ -43,38 +45,23 @@ public class BjbCobSdkPlugin: NSObject, FlutterPlugin {
       CobSDK.shared.startEmailVerification(
         phoneNumber: phoneNumber,
         email: email,
-        clientPlatform: clientPlatform,
         from: rootViewController
       ) { sdkResult in
         DispatchQueue.main.async {
           switch sdkResult {
-          case .success(let data):
-            // Ensure data is properly typed as [String: Any]
-            let responseData: [String: Any]
-            if let dataDict = data as? [String: Any] {
-              responseData = dataDict
-            } else {
-              responseData = ["message": "COB completed successfully"]
-            }
-            
-            // Return success format that Flutter SdkCobResult.fromMap expects
+          case .success:
             result([
-              "status": "success",
-              "data": responseData,
-              "errorMessage": nil
-            ] as [String: Any])
+              "status": "success"
+            ])
           case .cancelled:
             result([
-              "status": "cancelled",
-              "data": ["message": "User cancelled"],
-              "errorMessage": nil
-            ] as [String: Any])
+              "status": "cancelled"
+            ])
           case .error(let message):
             result([
               "status": "error",
-              "data": ["message": message],
               "errorMessage": message
-            ] as [String: Any])
+            ])
           }
           self.pendingResult = nil
         }
@@ -85,8 +72,9 @@ public class BjbCobSdkPlugin: NSObject, FlutterPlugin {
   private func handleLaunchKYC(result: @escaping FlutterResult) {
     pendingResult = result
     
-    DispatchQueue.main.async {
-      guard let rootViewController = self.getRootViewController() else {
+    DispatchQueue.main.async { [weak self] in
+      guard let self = self,
+            let rootViewController = self.getRootViewController() else {
         result(FlutterError(code: "NO_ACTIVITY", message: "Cannot find root view controller", details: nil))
         return
       }
@@ -98,7 +86,7 @@ public class BjbCobSdkPlugin: NSObject, FlutterPlugin {
       result([
         "status": "success",
         "data": ["message": "KYC launched"]
-      ] as [String: Any])
+      ])
       self.pendingResult = nil
     }
   }

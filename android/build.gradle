@@ -57,7 +57,7 @@ android {
         implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
         
         // BJB COB from private Maven repo
-        implementation 'com.bjb.cob:cob-lib:0.4.6'
+        implementation 'com.bjb.cob:cob-lib:0.3.6'
         
         // Glide for image loading (required by BJB COB)
         implementation 'com.github.bumptech.glide:glide:4.16.0'

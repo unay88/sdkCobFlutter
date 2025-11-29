@@ -13,7 +13,7 @@ Universal Flutter plugin for BJB Customer Onboarding SDK supporting both iOS and
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'BJB Team' => 'your.email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*', 'sdkCob/**/*.{h,m,swift}'
+  s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '15.5'
   
@@ -27,26 +27,12 @@ Universal Flutter plugin for BJB Customer Onboarding SDK supporting both iOS and
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(FLUTTER_ROOT)/bin/cache/artifacts/engine/ios*'
   }
 
-  # SDK COB Dependencies
+  # Native iOS SDK dependencies - version controlled by git in host Podfile
+  # iOS: pod 'sdkCob', :git => 'https://github.com/unay88/sdkCob.git'
+  # Android: implementation 'com.bjb.cob:cob-lib:0.4.3-SNAPSHOT'
+  s.dependency 'sdkCob'  # No version constraint - git handles versioning
   s.dependency 'DigitalIdentity'
   s.dependency 'Ojo'
-  s.dependency 'SSZipArchive'
-  s.dependency 'Clickstream', '2.0.42'
-  s.dependency 'ReachabilitySwift'
-  s.dependency 'SwiftProtobuf'
-  
-  # # Include assets
-  # s.resource_bundles = {
-  #   'bjb_cob_sdk_assets' => ['sdkCob/Assets.xcassets/**/*']
-  # }
-
-  # Include native SDK framework
-  s.vendored_frameworks = 'sdkCob.framework'
-  s.resources = 'sdkCob/**/*.{png,jpg,jpeg,gif,pdf,xib,storyboard}'
-  s.resource_bundles = {
-    'bjb_cob_sdk_assets' => ['sdkCob/Assets.xcassets']
-  }
-  
 
   s.swift_version = '5.0'
 end

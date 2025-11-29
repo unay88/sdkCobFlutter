@@ -16,14 +16,7 @@ class BjbCobSdk {
         'email': email,
         'clientPlatform': clientPlatform,
       });
-      // Handle result safely - convert to Map<String, dynamic>
-      final Map<String, dynamic> resultMap = {};
-      if (result is Map) {
-        result.forEach((key, value) {
-          resultMap[key.toString()] = value;
-        });
-      }
-      return SdkCobResult.fromMap(resultMap);
+      return SdkCobResult.fromMap(Map<String, dynamic>.from(result));
     } on PlatformException catch (e) {
       return SdkCobResult.error(e.message ?? 'Unknown error');
     }
@@ -33,14 +26,7 @@ class BjbCobSdk {
   static Future<SdkCobResult> launchKYC() async {
     try {
       final result = await _channel.invokeMethod('launchKYC');
-      // Handle result safely - convert to Map<String, dynamic>
-      final Map<String, dynamic> resultMap = {};
-      if (result is Map) {
-        result.forEach((key, value) {
-          resultMap[key.toString()] = value;
-        });
-      }
-      return SdkCobResult.fromMap(resultMap);
+      return SdkCobResult.fromMap(Map<String, dynamic>.from(result));
     } on PlatformException catch (e) {
       return SdkCobResult.error(e.message ?? 'Unknown error');
     }
@@ -75,29 +61,16 @@ class SdkCobResult {
   }
 
   factory SdkCobResult.fromMap(Map<String, dynamic> map) {
-    final statusStr = map['status']?.toString() ?? 'error';
+    final statusStr = map['status'] as String;
     final status = SdkCobStatus.values.firstWhere(
       (e) => e.toString().split('.').last == statusStr,
       orElse: () => SdkCobStatus.error,
     );
 
-    // Handle data safely
-    Map<String, dynamic>? resultData;
-    if (map['data'] != null) {
-      if (map['data'] is Map) {
-        resultData = {};
-        (map['data'] as Map).forEach((key, value) {
-          resultData![key.toString()] = value;
-        });
-      } else {
-        resultData = null;
-      }
-    }
-
     return SdkCobResult._(
       status: status,
-      data: resultData,
-      errorMessage: map['errorMessage']?.toString(),
+      data: map['data'] as Map<String, dynamic>?,
+      errorMessage: map['errorMessage'] as String?,
     );
   }
 
