@@ -292,18 +292,8 @@ public class UlangSDKCobViewController: UIViewController {
     }
     
     @objc private func backButtonTapped() {
-        // Navigate back to WebViewController and trigger retryKyc
-        if let navController = navigationController,
-           let webVC = navController.viewControllers.first(where: { $0 is WebViewController }) as? WebViewController {
-            // Pop to WebViewController
-            navController.popToViewController(webVC, animated: true)
-            // Trigger retryKyc after pop animation completes
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                webVC.navigateToRetryKYC()
-            }
-        } else {
-            navigationController?.popViewController(animated: true)
-        }
+        print("🔙 UlangSDK: Back button tapped - restarting KYC")
+        retryKYC()
     }
     
     public override var prefersStatusBarHidden: Bool {

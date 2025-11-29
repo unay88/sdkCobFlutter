@@ -487,8 +487,8 @@ extension WebViewController: WKScriptMessageHandler {
                 print("✅ WebView: closeWebView trigger received - back to ValidasiHp")
                 navigateBackToHost(withResult: "cancelled")
             } else if messageBody == "retryKyc" {
-                print("🔄 NEW FLOW: retryKyc received - starting reinitiate flow")
-                startReinitiateFlow()
+                print("🔄 WebView: retryKyc received - navigating to UlangSDKCobViewController")
+                navigateToRetryKYC()
             } else if messageBody == "FinishCob" {
                 print("✅ WebView: FinishCob trigger received - navigate to HomePage")
                 navigateBackToHost(withResult: "success")
@@ -540,11 +540,7 @@ extension WebViewController: WKScriptMessageHandler {
             return
         }
         
-        // Additional safety check
-        if let currentUrl = webView.url?.absoluteString, currentUrl.contains("kyc-result") {
-            print("⚠️ WebView: URL contains kyc-result, blocking retry KYC navigation")
-            return
-        }
+
         
         print("🔄 WebView: Navigating to Retry KYC")
         let ulangVC = UlangSDKCobViewController()
@@ -593,116 +589,7 @@ extension WebViewController: WKScriptMessageHandler {
         print("✅ WebViewController: webView.load executed")
     }
     
-    private func startReinitiateFlow() {
-        let currentSession = SessionManager.shared.getSessionId() ?? "NO_SESSION"
-        print("🔄 [FLOW] Starting reinitiate flow...")
-        print("🔄 [FLOW] Current session before reinitiate: \(currentSession)")
-        print("🔄 [FLOW] WebViewController instance: \(Unmanaged.passUnretained(self).toOpaque())")
-        
-        OnboardingAPIService.shared.reinitiateOnboarding { [weak self] result in
-            DispatchQueue.main.async {
-                guard let self = self else { return }
-                
-                switch result {
-                case .success(let response):
-                    if response.succeeded == true {
-                        let newSession = SessionManager.shared.getSessionId() ?? "NO_SESSION"
-                        print("✅ [FLOW] Reinitiate success - launching KYC")
-                        print("✅ [FLOW] New session after reinitiate: \(newSession)")
-                        print("✅ [FLOW] Session changed: \(currentSession) -> \(newSession)")
-                        self.launchKYCVerification()
-                    } else {
-                        print("❌ [FLOW] Reinitiate failed: \(response.message ?? "Unknown error")")
-                    }
-                case .failure(let error):
-                    print("❌ [FLOW] Reinitiate failed: \(error)")
-                }
-            }
-        }
-    }
-    
-    private func launchKYCVerification() {
-        let token = SessionManager.shared.getToken()
-        let sessionId = SessionManager.shared.getSessionId() ?? "NO_SESSION"
-        
-        print("🚀 [FLOW] Launching KYC verification...")
-        print("🚀 [FLOW] Using session: \(sessionId)")
-        print("🚀 [FLOW] Token available: \(token != nil)")
-        
-        guard let finalToken = token else {
-            print("❌ [FLOW] Token not available")
-            return
-        }
-        
-        let correlationId = sessionId
-        
-        let kycConfig = DigitalIdentityKYCVerificationConfig(
-            baseUrl: SDKConfiguration.getKYCBaseUrl(),
-            token: finalToken,
-            correlationId: correlationId,
-            language: .indonesia,
-            theme: BJBThemeHelper.createCustomTheme()
-        )
-        
-        print("🚀 [FLOW] KYC Config - baseUrl: \(SDKConfiguration.getKYCBaseUrl())")
-        print("🚀 [FLOW] KYC Config - correlationId: \(correlationId)")
-        
-        do {
-            try DigitalIdentitySdk.shared.launchKYCVerification(
-                config: kycConfig,
-                viewcontroller: self,
-                helpCenter: SDKHelpCenterDelegate()
-            ) { [weak self] result in
-                DispatchQueue.main.async {
-                    self?.handleKYCResult(result)
-                }
-            }
-            print("🚀 [FLOW] KYC verification launched successfully")
-        } catch {
-            print("❌ [FLOW] Failed to launch KYC: \(error)")
-        }
-    }
-    
-    private func handleKYCResult(_ result: Any) {
-        let resultString = String(describing: result)
-        let sessionId = SessionManager.shared.getSessionId() ?? "NO_SESSION"
-        
-        print("🔍 [FLOW] KYC Result received: \(resultString)")
-        print("🔍 [FLOW] Current session after KYC: \(sessionId)")
-        print("🔍 [FLOW] WebViewController instance: \(Unmanaged.passUnretained(self).toOpaque())")
-        
-        if resultString.lowercased().contains("success") || resultString.lowercased().contains("completed") {
-            print("✅ [FLOW] KYC completed - reloading WebView with new session")
-            reloadWebViewWithNewSession()
-        } else if resultString.lowercased().contains("cancel") || resultString.lowercased().contains("dismiss") {
-            print("⚠️ [FLOW] KYC cancelled by user - staying in current WebView")
-        } else {
-            print("❌ [FLOW] KYC not completed: \(resultString)")
-        }
-    }
-    
-    private func reloadWebViewWithNewSession() {
-        guard let sessionId = SessionManager.shared.getSessionId() else {
-            print("❌ [FLOW] No session ID found for reload")
-            return
-        }
-        
-        let urlString = "\(SDKConfiguration.getKYCResultUrl())/\(sessionId)"
-        guard let url = URL(string: urlString) else {
-            print("❌ [FLOW] Invalid URL for reload: \(urlString)")
-            return
-        }
-        
-        print("🔄 [FLOW] Reloading WebView with new session")
-        print("🔄 [FLOW] New URL: \(urlString)")
-        print("🔄 [FLOW] WebViewController instance: \(Unmanaged.passUnretained(self).toOpaque())")
-        print("🔄 [FLOW] Previous URL: \(webView.url?.absoluteString ?? "none")")
-        
-        let request = URLRequest(url: url)
-        webView.load(request)
-        
-        print("✅ [FLOW] WebView reload initiated")
-    }
+
 
 private class SDKHelpCenterDelegate: DigitalIdentityHelpCenterDelegate {
     func isHelpCTAEnabled(for type: DigitalIdentityHelpCenterType) -> Bool {

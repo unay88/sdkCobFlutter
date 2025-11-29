@@ -130,8 +130,8 @@ public class BJBThemeHelper {
             ),
             termsInfo: DigitalIdentityTermsAndPrivacyPolicyTheme(
                 title: termsTitle,
-                termsUrl: "",
-                privacyUrl: ""
+                termsUrl: "https://www.bankbjb.co.id/terms",
+                privacyUrl: "https://www.bankbjb.co.id/privacy"
             ),
             captureButton: getPrimaryCTATheme()
         )
